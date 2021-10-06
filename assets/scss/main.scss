@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+//COLOR MODS
+$primary: #3f5c40;
+$background: #e9ffe9;
+
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    z-index: 90000;
+}
+.loader.hidden {
+    animation: fadeOut 1s 2s ease forwards;
+}
+@keyframes fadeOut {
+    100% {
+        background-color: $primary;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
