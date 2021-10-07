@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+//COLOR MODS
+$primary: #3f5c40;
+$background: #e9ffe9;
+
+
+.loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1D2326;
+    z-index: 90000;
+
+svg{
+    width: 45vw;
+    
+}
+#wheel1, #wheel2{
+    animation-name: Rotation;
+    animation-duration: 1s;
+    // animation-delay: ;
+    animation-iteration-count: infinite;
+    // animation-direction: ;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes Rotation {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+}
+.loader.hidden {
+    animation: fadeOut 1s 2s ease forwards;
+}
+@keyframes fadeOut {
+    100% {
+        background-color: $primary;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
