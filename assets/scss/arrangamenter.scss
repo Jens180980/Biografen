@@ -2,10 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
 
+
+
 $gold:#D3AC2B;
 $red:#771830;
 $white: white;
-
+$black: black;
 //mixin til styles som genbruges
 @mixin h2text {
     // font-family: 'Ephesis', cursive;
@@ -13,10 +15,55 @@ $white: white;
     padding: 3vh;
     font-size: 5vh;
     color: $gold;
+    margin-top: 0;
 }
 @mixin redbackground {
     background: $red;
     background: radial-gradient(circle, $red 51%, #551021 72%);
+
+}
+@mixin whiteparagraph {
+    color: $white;
+    font-size: 3vh;
+}
+.headerpicture {
+    height:50vh;
+    background-image: url(/assets/images/Sal_02.jpg);
+    background-size: cover;
+    background-position: -100px --100px;
+}
+
+.specialforestillinger {
+    font-family: 'Karla', sans-serif;
+    @include redbackground();
+    #specialfh2 {
+        @include h2text();
+    }
+    .specialfgrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        figure {
+            text-align: center;
+            #citizenpic {
+                width:60%;
+                padding:5%;
+                border: 1px solid white;
+            }
+            #pawpic {
+                width: 60%;
+                padding:5%;
+                border: 1px solid white;
+            }
+            figcaption {
+                @include whiteparagraph();
+                h3 {
+                    color: $gold;
+                }
+            }
+        }
+        
+    }
+    
 
 }
 //style arrangamenter
@@ -25,12 +72,12 @@ $white: white;
     @include redbackground();
     #arrangamenterh2 {
         @include h2text();
+        
     }
     #arrangamentp {
         font-family: 'Karla', sans-serif;
         margin-left: 5%;
-        color: $white;
-        font-size: 3vh;
+        @include whiteparagraph();
         padding:2vh;
     }
     #arranggrid {
@@ -42,19 +89,18 @@ $white: white;
             padding-bottom: 5vh;
             
             figcaption {
-                color: $white;
-                font-size: 3vh;
+                @include whiteparagraph();
                 padding:2vh;
                 float: right;
                 #arrangamentertitle {
                     color: $gold;
-                    padding: 3vh;
+                    
                 }
                 p {
                     padding-left: 3vh;
                 }
                 #tilmeldbutton {
-                    margin: 10%;
+                   margin-left: 5%;
                     padding: 2vh;
                     // border: 1px solid white;
                     background: transparent;
@@ -71,10 +117,24 @@ $white: white;
         width: 100%;
     }
 }
+    
 
+
+// medlemskab og tilmeld digselv section styling
 .tilmeldsection {
     font-family: 'Karla', sans-serif;
     @include redbackground();
+    #medlemh2 {
+        @include h2text();
+    }
+    p {
+        padding-left: 3vh;
+        @include whiteparagraph();
+        #goldspan {
+            color: $gold;
+            font-size: 4vh;
+        }
+    }
     #kategori.select{
         height:5vh;
         color: $gold;
@@ -122,6 +182,8 @@ $white: white;
 #bestilh2 {
     @include h2text();
 }
+
+
 
 //Media queries tablet
 @media screen and (max-width: 1200px) and (min-width: 800px) {
