@@ -1,20 +1,40 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+// font-family: 'Ephesis', cursive;
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap"); //font-family: 'Karla', sans-serif;
+// font-family: "Karla", sans-serif;
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    box-sizing:border-box;
-    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
     outline: none;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
-//COLOR MODS
-$primary: #3f5c40;
-$background: #e9ffe9;
-
-
+body{
+    background-color: #611427;
+}
+@mixin button {
+    padding: 10px;
+    font-size: 2vw;
+    font-weight: 600;
+    color: black;
+    background-color: #F9BC50;
+    border: 3px solid #bd8c39;
+    outline: 3px solid #bd8c39;
+    outline-offset: 3px;
+    transition: 0.1s;
+    &:hover{
+        outline-offset: 6px;
+    }
+    
+}
+// Her starter page loader!!!
 .loader {
     position: absolute;
     width: 100%;
@@ -22,24 +42,45 @@ $background: #e9ffe9;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1D2326;
+    background-color: #1d2326;
     z-index: 90000;
 
-svg{
-    width: 45vw;
-    
+    // her er svg logoet
+    svg {
+        width: 45vw;
+    }
+    #wheel1,
+    #wheel2 {
+        animation-name: Rotation;
+        animation-duration: 1s;
+        // animation-delay: ;
+        animation-iteration-count: infinite;
+        // animation-direction: ;
+        animation-timing-function: linear;
+        animation-fill-mode: none;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
 }
-#wheel1, #wheel2{
-    animation-name: Rotation;
-    animation-duration: 1s;
-    // animation-delay: ;
-    animation-iteration-count: infinite;
-    // animation-direction: ;
-    animation-timing-function: linear;
-    animation-fill-mode: none;
+// .loader.hidden er css'en der bliver kaldt fra js så "page loadern" forsvinder
+.loader.hidden {
+    animation: fadeOut 2s 2s linear forwards;
+}
+// Den stor sirkle der popper fram før alt forsvinder
+#zoomOut {
+    position: absolute;
+    width: 0vw;
+    height: 0vw;
+    background-color: #611427;
+    border-radius: 50%;
+    animation-name: zoomOut;
+    animation-duration: 0.1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
     transform-origin: center;
-    transform-box: fill-box;
 }
+// Alle keyframes'erne
 @keyframes Rotation {
     from {
         transform: rotateZ(0deg);
@@ -49,17 +90,23 @@ svg{
         transform: rotateZ(360deg);
     }
 }
+@keyframes zoomOut {
+    0% {
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+    }
+    100% {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0%;
+    }
+}
 
-}
-.loader.hidden {
-    animation: fadeOut 1s 2s ease forwards;
-}
 @keyframes fadeOut {
     100% {
-        background-color: $primary;
+        background-color: #611427;
         opacity: 0;
         visibility: hidden;
     }
 }
-
-
