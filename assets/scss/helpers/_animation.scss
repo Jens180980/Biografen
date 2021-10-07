@@ -1,0 +1,35 @@
+//Animation loader
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes Rotation {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+//Index - Slider
+@keyframes slideIn {
+    0% {
+        transform: translate(-100vw, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.9);
+    }
+}

@@ -1,0 +1,147 @@
+//imort font
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+@import "helpers/variabler";
+@import "helpers/mixin";
+//style arrangamenter
+.arrangamentersection {
+    font-family: 'Karla', sans-serif;
+    @include redbackground();
+    #arrangamenterh2 {
+        @include heading();
+    }
+    #arrangamentp {
+        font-family: 'Karla', sans-serif;
+        margin-left: 5%;
+        color: $white;
+        font-size: 3vh;
+        padding: 2vh;
+    }
+    #arranggrid {
+        figure {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            width: 90%;
+            margin: auto;
+            padding-bottom: 5vh;
+            figcaption {
+                color: $white;
+                font-size: 3vh;
+                padding: 2vh;
+                float: right;
+                #arrangamentertitle {
+                    color: $gold;
+                    padding: 3vh;
+                }
+                p {
+                    padding-left: 3vh;
+                }
+                #tilmeldbutton {
+                    margin: 10%;
+                    padding: 2vh;
+                    // border: 1px solid white;
+                    background: transparent;
+                    a {
+                        color: $gold;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+    img {
+        width: 100%;
+    }
+}
+
+.tilmeldsection {
+    font-family: 'Karla', sans-serif;
+    @include redbackground();
+    #kategori.select {
+        height: 5vh;
+        color: $gold;
+        font-size: 2.5vh;
+    }
+    #tilmeldh2 {
+        @include heading();
+    }
+    form {
+        width: 50%;
+        margin: auto;
+        padding-bottom: 4vh;
+    }
+    input {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        margin: 8px 0;
+    }
+    label {
+        text-align: center;
+        padding: 10px;
+    }
+    button {
+        height: 50px;
+        width: 100%;
+        font-size: 2vh;
+    }
+    #textarea {
+        height: 100px;
+    }
+    .error {
+        border-color: red;
+    }
+    .errormessage {
+        color: red;
+    }
+    .feedback {
+        color: red;
+        font-size: 2vh;
+    }
+}
+
+#bestilh2 {
+    @include heading();
+}
+
+//Media queries tablet
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .arrangamentersection {
+        #arranggrid {
+            figure {
+                img {
+                    width: 80%;
+                    display: block;
+                    margin: auto;
+                }
+                display: block;
+            }
+        }
+    }
+    .tilmeldsection {
+        form {
+            width: 60%;
+            margin: auto;
+        }
+    }
+}
+
+//Media queries telefon
+@media screen and (max-width: 800px) {
+    .arrangamentersection {
+        #arranggrid {
+            figure {
+                display: block;
+            }
+        }
+    }
+    .tilmeldsection {
+        #kategori.select {
+            font-size: 3vh;
+        }
+        form {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+.arrangamentersection {
+  font-family: 'Karla', sans-serif;
+  background: #771830;
+  background: radial-gradient(circle, #771830 51%, #551021 72%);
+}
+
+.arrangamentersection #arrangamenterh2 {
+  color: #d3ac2b;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
+}
+
+.arrangamentersection #arrangamentp {
+  font-family: 'Karla', sans-serif;
+  margin-left: 5%;
+  color: #f0f0e5;
+  font-size: 3vh;
+  padding: 2vh;
+}
+
+.arrangamentersection #arranggrid figure {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 5vh;
+}
+
+.arrangamentersection #arranggrid figure figcaption {
+  color: #f0f0e5;
+  font-size: 3vh;
+  padding: 2vh;
+  float: right;
+}
+
+.arrangamentersection #arranggrid figure figcaption #arrangamentertitle {
+  color: #d3ac2b;
+  padding: 3vh;
+}
+
+.arrangamentersection #arranggrid figure figcaption p {
+  padding-left: 3vh;
+}
+
+.arrangamentersection #arranggrid figure figcaption #tilmeldbutton {
+  margin: 10%;
+  padding: 2vh;
+  background: transparent;
+}
+
+.arrangamentersection #arranggrid figure figcaption #tilmeldbutton a {
+  color: #d3ac2b;
+  font-weight: bold;
+}
+
+.arrangamentersection img {
+  width: 100%;
+}
+
+.tilmeldsection {
+  font-family: 'Karla', sans-serif;
+  background: #771830;
+  background: radial-gradient(circle, #771830 51%, #551021 72%);
+}
+
+.tilmeldsection #kategori.select {
+  height: 5vh;
+  color: #d3ac2b;
+  font-size: 2.5vh;
+}
+
+.tilmeldsection #tilmeldh2 {
+  color: #d3ac2b;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
+}
+
+.tilmeldsection form {
+  width: 50%;
+  margin: auto;
+  padding-bottom: 4vh;
+}
+
+.tilmeldsection input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  margin: 8px 0;
+}
+
+.tilmeldsection label {
+  text-align: center;
+  padding: 10px;
+}
+
+.tilmeldsection button {
+  height: 50px;
+  width: 100%;
+  font-size: 2vh;
+}
+
+.tilmeldsection #textarea {
+  height: 100px;
+}
+
+.tilmeldsection .error {
+  border-color: red;
+}
+
+.tilmeldsection .errormessage {
+  color: red;
+}
+
+.tilmeldsection .feedback {
+  color: red;
+  font-size: 2vh;
+}
+
+#bestilh2 {
+  color: #d3ac2b;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .arrangamentersection #arranggrid figure {
+    display: block;
+  }
+  .arrangamentersection #arranggrid figure img {
+    width: 80%;
+    display: block;
+    margin: auto;
+  }
+  .tilmeldsection form {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .arrangamentersection #arranggrid figure {
+    display: block;
+  }
+  .tilmeldsection #kategori.select {
+    font-size: 3vh;
+  }
+  .tilmeldsection form {
+    width: 80%;
+    margin: auto;
+  }
+}

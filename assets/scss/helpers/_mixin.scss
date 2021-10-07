@@ -1,0 +1,18 @@
+//mixin til styles som genbruges
+@mixin redbackground {
+    background: $red;
+    background: radial-gradient(circle, $red 51%, #551021 72%);
+}
+
+@mixin heading {
+    color: $gold;
+    font-family: 'Ephesis', cursive;
+    font-size: 3em;
+    text-align: center;
+    padding: 3vh;
+}
+
+@mixin text {
+    color: $white;
+    font-family: 'Karla', sans-serif;
+}

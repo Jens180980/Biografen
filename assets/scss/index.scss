@@ -1,0 +1,126 @@
+@import "helpers/variabler";
+@import "helpers/mixin";
+@import "helpers/animation";
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap'); //font-family: 'Karla', sans-serif;
+//Header slider
+.slideshow {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 70vh;
+        display: none;
+        z-index: 1;
+        justify-content: center;
+    }
+    .active-slide {
+        z-index: 10;
+        display: flex;
+        animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+    }
+    .prev-slide {
+        display: flex;
+    }
+    .dot-cont {
+        position: absolute;
+        z-index: 11;
+        bottom: 5px;
+        width: 100px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        .dot {
+            margin: 5px;
+            width: 50%;
+            height: 75%;
+            border-radius: 50%;
+            background: $gold;
+            &:hover {
+                cursor: pointer;
+                background: white;
+            }
+            .active-dot {
+                animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+            }
+        }
+    }
+}
+
+//Gennemgående kode
+h2 {
+    @include heading();
+}
+
+p {
+    @include text();
+    margin-top: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: $gold;
+    font-weight: bold;
+    &:hover {
+        color: $white;
+    }
+}
+
+//Sektion med figure
+#index {
+    display: grid;
+    grid-template-columns: auto auto;
+    figure {
+        margin: 3em;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// header - om os
+#aboutHeader {
+    height: 80vh;
+    background: url("/assets/images/Biograf\ \(1\).jpg");
+    background-size: cover;
+}
+
+h1 {
+    @include heading;
+    font-size: 4em;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+//Sektion omkring biograf 
+#about {
+    figure {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        margin: 3em;
+        img {
+            width: 100%;
+        }
+        p {
+            column-count: 2;
+            padding: 0 1.5em;
+        }
+        figcaption {
+            border: 2px solid $black;
+        }
+    }
+}
+
+//header - film
+#filmHeader {
+    height: 80vh;
+    background: url("/assets/images/Kultur_3D-film_06-0_423539a.jpg");
+    background-size: cover;
+}
