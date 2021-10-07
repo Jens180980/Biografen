@@ -66,19 +66,32 @@ $black: black;
     
 
 }
+@import "helpers/variabler";
+@import "helpers/mixin";
+
 //style arrangamenter
 .arrangamentersection {
     font-family: 'Karla', sans-serif;
     @include redbackground();
     #arrangamenterh2 {
+
         @include h2text();
         
+
+        @include heading();
+
     }
     #arrangamentp {
         font-family: 'Karla', sans-serif;
         margin-left: 5%;
+
         @include whiteparagraph();
         padding:2vh;
+
+        color: $white;
+        font-size: 3vh;
+        padding: 2vh;
+
     }
     #arranggrid {
         figure {
@@ -87,6 +100,7 @@ $black: black;
             width: 90%;
             margin: auto;
             padding-bottom: 5vh;
+
             
             figcaption {
                 @include whiteparagraph();
@@ -95,12 +109,26 @@ $black: black;
                 #arrangamentertitle {
                     color: $gold;
                     
+
+            figcaption {
+                color: $white;
+                font-size: 3vh;
+                padding: 2vh;
+                float: right;
+                #arrangamentertitle {
+                    color: $gold;
+                    padding: 3vh;
+
                 }
                 p {
                     padding-left: 3vh;
                 }
                 #tilmeldbutton {
+
                    margin-left: 5%;
+
+                    margin: 10%;
+
                     padding: 2vh;
                     // border: 1px solid white;
                     background: transparent;
@@ -111,12 +139,13 @@ $black: black;
                 }
             }
         }
-        
+
     }
     img {
         width: 100%;
     }
 }
+
     
 
 
@@ -137,10 +166,19 @@ $black: black;
     }
     #kategori.select{
         height:5vh;
+
+
+.tilmeldsection {
+    font-family: 'Karla', sans-serif;
+    @include redbackground();
+    #kategori.select {
+        height: 5vh;
+
         color: $gold;
         font-size: 2.5vh;
     }
     #tilmeldh2 {
+
         @include h2text();
     }
     form{
@@ -149,6 +187,15 @@ $black: black;
         padding-bottom: 4vh;
     }
     
+
+        @include heading();
+    }
+    form {
+        width: 50%;
+        margin: auto;
+        padding-bottom: 4vh;
+    }
+
     input {
         width: 100%;
         box-sizing: border-box;
@@ -179,6 +226,7 @@ $black: black;
         font-size: 2vh;
     }
 }
+
 #bestilh2 {
     @include h2text();
 }
@@ -188,6 +236,16 @@ $black: black;
 //Media queries tablet
 @media screen and (max-width: 1200px) and (min-width: 800px) {
     .arrangamentersection{
+
+
+#bestilh2 {
+    @include heading();
+}
+
+//Media queries tablet
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .arrangamentersection {
+
         #arranggrid {
             figure {
                 img {
@@ -200,9 +258,15 @@ $black: black;
         }
     }
     .tilmeldsection {
+
         form{
             width: 60%;
             margin:auto;
+
+        form {
+            width: 60%;
+            margin: auto;
+
         }
     }
 }
@@ -210,7 +274,11 @@ $black: black;
 //Media queries telefon
 @media screen and (max-width: 800px) {
 
+
     .arrangamentersection{
+
+    .arrangamentersection {
+
         #arranggrid {
             figure {
                 display: block;
@@ -218,6 +286,7 @@ $black: black;
         }
     }
     .tilmeldsection {
+
         #kategori.select{
             font-size: 3vh;
         }
@@ -229,3 +298,14 @@ $black: black;
     }
     
  }
+
+        #kategori.select {
+            font-size: 3vh;
+        }
+        form {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+
