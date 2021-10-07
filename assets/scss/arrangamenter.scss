@@ -1,21 +1,97 @@
 //imort font
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+
+
+$gold:#D3AC2B;
+$red:#771830;
+$white: white;
+$black: black;
+//mixin til styles som genbruges
+@mixin h2text {
+    // font-family: 'Ephesis', cursive;
+    text-align: center;
+    padding: 3vh;
+    font-size: 5vh;
+    color: $gold;
+    margin-top: 0;
+}
+@mixin redbackground {
+    background: $red;
+    background: radial-gradient(circle, $red 51%, #551021 72%);
+
+}
+@mixin whiteparagraph {
+    color: $white;
+    font-size: 3vh;
+}
+.headerpicture {
+    height:50vh;
+    background-image: url(/assets/images/Sal_02.jpg);
+    background-size: cover;
+    background-position: -100px --100px;
+}
+
+.specialforestillinger {
+    font-family: 'Karla', sans-serif;
+    @include redbackground();
+    #specialfh2 {
+        @include h2text();
+    }
+    .specialfgrid {
+        display: grid;
+        grid-template-columns: auto auto;
+        figure {
+            text-align: center;
+            #citizenpic {
+                width:60%;
+                padding:5%;
+                border: 1px solid white;
+            }
+            #pawpic {
+                width: 60%;
+                padding:5%;
+                border: 1px solid white;
+            }
+            figcaption {
+                @include whiteparagraph();
+                h3 {
+                    color: $gold;
+                }
+            }
+        }
+        
+    }
+    
+
+}
 @import "helpers/variabler";
 @import "helpers/mixin";
+
 //style arrangamenter
 .arrangamentersection {
     font-family: 'Karla', sans-serif;
     @include redbackground();
     #arrangamenterh2 {
+
+        @include h2text();
+        
+
         @include heading();
+
     }
     #arrangamentp {
         font-family: 'Karla', sans-serif;
         margin-left: 5%;
+
+        @include whiteparagraph();
+        padding:2vh;
+
         color: $white;
         font-size: 3vh;
         padding: 2vh;
+
     }
     #arranggrid {
         figure {
@@ -24,6 +100,16 @@
             width: 90%;
             margin: auto;
             padding-bottom: 5vh;
+
+            
+            figcaption {
+                @include whiteparagraph();
+                padding:2vh;
+                float: right;
+                #arrangamentertitle {
+                    color: $gold;
+                    
+
             figcaption {
                 color: $white;
                 font-size: 3vh;
@@ -32,12 +118,17 @@
                 #arrangamentertitle {
                     color: $gold;
                     padding: 3vh;
+
                 }
                 p {
                     padding-left: 3vh;
                 }
                 #tilmeldbutton {
+
+                   margin-left: 5%;
+
                     margin: 10%;
+
                     padding: 2vh;
                     // border: 1px solid white;
                     background: transparent;
@@ -48,21 +139,55 @@
                 }
             }
         }
+
     }
     img {
         width: 100%;
     }
 }
 
+    
+
+
+// medlemskab og tilmeld digselv section styling
+.tilmeldsection {
+    font-family: 'Karla', sans-serif;
+    @include redbackground();
+    #medlemh2 {
+        @include h2text();
+    }
+    p {
+        padding-left: 3vh;
+        @include whiteparagraph();
+        #goldspan {
+            color: $gold;
+            font-size: 4vh;
+        }
+    }
+    #kategori.select{
+        height:5vh;
+
+
 .tilmeldsection {
     font-family: 'Karla', sans-serif;
     @include redbackground();
     #kategori.select {
         height: 5vh;
+
         color: $gold;
         font-size: 2.5vh;
     }
     #tilmeldh2 {
+
+        @include h2text();
+    }
+    form{
+        width: 50%;
+        margin:auto;
+        padding-bottom: 4vh;
+    }
+    
+
         @include heading();
     }
     form {
@@ -70,6 +195,7 @@
         margin: auto;
         padding-bottom: 4vh;
     }
+
     input {
         width: 100%;
         box-sizing: border-box;
@@ -85,6 +211,7 @@
         width: 100%;
         font-size: 2vh;
     }
+
     #textarea {
         height: 100px;
     }
@@ -101,12 +228,24 @@
 }
 
 #bestilh2 {
+    @include h2text();
+}
+
+
+
+//Media queries tablet
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .arrangamentersection{
+
+
+#bestilh2 {
     @include heading();
 }
 
 //Media queries tablet
 @media screen and (max-width: 1200px) and (min-width: 800px) {
     .arrangamentersection {
+
         #arranggrid {
             figure {
                 img {
@@ -119,16 +258,27 @@
         }
     }
     .tilmeldsection {
+
+        form{
+            width: 60%;
+            margin:auto;
+
         form {
             width: 60%;
             margin: auto;
+
         }
     }
 }
 
 //Media queries telefon
 @media screen and (max-width: 800px) {
+
+
+    .arrangamentersection{
+
     .arrangamentersection {
+
         #arranggrid {
             figure {
                 display: block;
@@ -136,6 +286,19 @@
         }
     }
     .tilmeldsection {
+
+        #kategori.select{
+            font-size: 3vh;
+        }
+        form{
+            width: 80%;
+            margin:auto;
+          
+        }
+    }
+    
+ }
+
         #kategori.select {
             font-size: 3vh;
         }
@@ -145,3 +308,4 @@
         }
     }
 }
+

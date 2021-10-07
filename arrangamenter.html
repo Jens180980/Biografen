@@ -6,35 +6,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/slider.css">
+    <!-- <link rel="stylesheet" href="/assets/css/index.css"> -->
     <link rel="stylesheet" href="/assets/css/arrangamenter.css">
     <script src="/assets/js/arrangamenter.js" defer></script>
-    <script src="assets/js/slider.js" defer></script>
+    
     <title>Biografen | Home</title>
 </head>
 
 <body>
 
-
-    <!-- Vores slider container  -->
-    <header class="slideshow">
-        <!-- Det her er antal billeder  -->
-        <img src="assets/images/biograf.jpg" alt="Biograf Kino" class="slide">
-        <img src="assets/images/14d42544dd9249c7b15fe2d405aeb2e8_biograf1.jpg" alt="Biograf Kino" class="slide">
-        <img src="assets/images/Sal_01.jpg" alt="Biograf Kino" class="slide">
-        <img src="assets/images/Horror-i-biograferne-2013.jpg" alt="Biograf Kino" class="slide">
-
-
-
-        <!-- Prikker/dot m event til når man klikker -->
-        <div class="dot-cont">
-            <!-- 1 dot for hver slide -->
-            <div class="dot" onclick="clickChangeSlide(0)"></div>
-            <div class="dot" onclick="clickChangeSlide(1)"></div>
-            <div class="dot" onclick="clickChangeSlide(2)"></div>
-            <div class="dot" onclick="clickChangeSlide(3)"></div>
-        </div>
-
+    <header class="headerpicture" >
     </header>
+
+    <!-- specialforestillinger section -->
+    <section class="specialforestillinger">
+        <h2 id="specialfh2">Specialforestillinger</h2>
+        <div class="specialfgrid">
+            <figure>
+                <img id="citizenpic" src="/assets/images/poster/Poster-Citizenfour.jpg" alt="">
+                <figcaption>
+                    <h3>Nyhed: Citizenfour!</h3>
+                    <p>Resumé:</p>
+                    <p> Dokumentarfilmen 'Citizenfour' handler om whistlebloweren Edward Snowden. Dokumentaristen Laura Poitras, var med helt fra starten og portrætterer Snowden gennem adskillige møder med ham.
+                        Filmen tager sin begyndelse da Poitras flyver til Hong Kong, for at møde manden bag en række anonyme mails hun har modtaget. Det eneste de var underskrevet med var: Citizen Four. Han var klar til at afsløre hvordan NSA m.fl. benyttede sig af skjult overvågning.
+                        Produktet er en thriller, der udfolder sig foran tilskueren.
+                        </p>
+                </figcaption>
+            </figure>
+            <figure>
+                <img id="pawpic" src="/assets/images/poster/paw.jpg" alt="">
+                <figcaption>
+                    <h3>Paw patrol i Børnebio!</h3>
+                    <p>Resumé:</p>
+                    <p>Animationsfilmen 'Paw Patrol: Filmen' handler om de modige hunde kendt fra TV-serien 'Paw Patrol'.
+                        Ryder og Paw Patrol får travlt med at rydde op efter Humdinger, da han bliver borgmester i Adventure City, de får heldigvis hjælp af en ny allieret, den kvikke gravhund Liberty. Med nye spændende køretøjer og finurligt udstyr kæmper hvalpene for at redde Adventure Citys indbyggere. For med Paw Patrol er hjælpen straks på vej.</p>
+                </figcaption>
+            </figure>
+        </div>
+        
+    </section>
 
     <!-- Arrangamenter html i grid -->
     <section class="arrangamentersection">
@@ -47,7 +57,8 @@
                 <img src="/assets/images/coffeecake.jpg" alt="">
                 <figcaption>
                     <h3 id="arrangamentertitle">Kaffe og kage - hygge</h3>
-                    <p>Der er intet som at sludre over en god kop kaffe, og caféer har den perfekte atmosfære til hyggeligt samvær på alle timer af døgnet. Nyd en kop valgfri kaffe og dagens kage sammen med en god ven, din kæreste eller en anden, du holder af, så i har mulighed for at snakke om den film i har lige set sammen. </p>
+                    <p>Der er intet som at sludre over en god kop kaffe, og caféer har den perfekte atmosfære til hyggeligt samvær på alle timer af døgnet. Nyd en kop valgfri kaffe og dagens kage i vores cafe, sammen med en god ven, din kæreste eller en anden, du holder af, så i har mulighed for at snakke om den film i har lige set sammen. </p>
+                    <p>Husk at tilmelde dig, så du reserverer din plads. Vi holder kaffe og cake - hygge første onsdag hver måned. </p>
                     <button id="tilmeldbutton"><a href="">Tilmeld dig</a></button> 
                 </figcaption>
             </figure>
@@ -56,6 +67,7 @@
                 <figcaption>
                     <h3 id="arrangamentertitle">Meet and greet</h3>
                     <p>Invitation til børn: er et farvestrålende show, hvor store og små inviteres på en musikalsk rejse med Meet & Greet. Sang, dans, konfetti, LED-skærme samt Danmarks største sæbeboblemaskine er bare en del af deres kæmpeshow. Jeres børn har mulighed for at møde personligt de karakterer de har lige set i filmen. For eksempel: de berømte Paw Patrol.</p>
+                    <p>Husk at tilmelde dig, så du reserverer din plads. Vi holder meet and greet dage første søndag hver måned.</p>
                     <button id="tilmeldbutton"><a href="">Tilmeld dig</a></button>
                 </figcaption>
             </figure>
@@ -63,8 +75,20 @@
         
     </section>
 
-    <!-- Tilmeld digselv section -->
+ 
+    <!-- Medlemskab og Tilmeld digselv section -->
     <section class="tilmeldsection">
+        <h2 id="medlemh2">Medlemskab og priser</h2>
+        <p>
+         Du kan tilmelde dig til <span id="goldspan">SENIORBIO</span>, for at få særlige priser og tilbud.
+        </p>
+        <p> <span id="goldspan">10 film</span> inklusiv buffet - til kun 1800 dkk;</p>
+        <p> <span id="goldspan">24 film</span> inkluiv buffet - til kun 4000 dkk;</p>
+        <br>
+        <p>Du kan tilmelde dig til <span id="goldspan">BØRNEBIO</span>, for at få særlige priser og tilbud.</p>
+        <p> <span id="goldspan">10 film</span> og meet and greet bagefter med sodavand og frisk frugt - til kun 1800 dkk;</p>
+        <p> <span id="goldspan">24 film</span> og meet and greet bagefter med sodavand og frisk frugt - til kun 4000 dkk;</p>
+
         <h2 id="tilmeldh2">Tilmeld dig til: 
             <select class="select" id="kategori" name="biolist" form="bioform" required>
                 <option value="select">Selekt en kategori</option>
@@ -104,10 +128,8 @@
             </form>
     </section>
 
-    <!-- Bestil Billet section -->
-    <section>
-        <h2 id="bestilh2">Bestil billet</h2>
-    </section>
+    
+
 
     
 

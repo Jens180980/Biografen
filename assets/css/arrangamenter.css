@@ -1,5 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+.headerpicture {
+  height: 50vh;
+  background-image: url(/assets/images/Sal_02.jpg);
+  background-size: cover;
+  background-position: 0px;
+}
+
+.specialforestillinger {
+  font-family: 'Karla', sans-serif;
+  background: #771830;
+  background: radial-gradient(circle, #771830 51%, #551021 72%);
+}
+
+.specialforestillinger #specialfh2 {
+  text-align: center;
+  padding: 3vh;
+  font-size: 5vh;
+  color: #D3AC2B;
+  margin-top: 0;
+}
+
+.specialforestillinger .specialfgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.specialforestillinger .specialfgrid figure {
+  text-align: center;
+}
+
+.specialforestillinger .specialfgrid figure #citizenpic {
+  width: 60%;
+  padding: 5%;
+  border: 1px solid white;
+}
+
+.specialforestillinger .specialfgrid figure #pawpic {
+  width: 60%;
+  padding: 5%;
+  border: 1px solid white;
+}
+
+.specialforestillinger .specialfgrid figure figcaption {
+  color: white;
+  font-size: 3vh;
+}
+
+.specialforestillinger .specialfgrid figure figcaption h3 {
+  color: #D3AC2B;
+}
+
 .arrangamentersection {
   font-family: 'Karla', sans-serif;
   background: #771830;
@@ -18,6 +71,9 @@
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
+  margin-top: 0;
+
+
 
 }
 
@@ -61,6 +117,7 @@
   color: #D3AC2B;
 
   padding: 3vh;
+
 }
 
 .arrangamentersection #arranggrid figure figcaption p {
@@ -68,7 +125,7 @@
 }
 
 .arrangamentersection #arranggrid figure figcaption #tilmeldbutton {
-  margin: 10%;
+  margin-left: 5%;
   padding: 2vh;
   background: transparent;
 }
@@ -90,6 +147,25 @@
   font-family: 'Karla', sans-serif;
   background: #771830;
   background: radial-gradient(circle, #771830 51%, #551021 72%);
+}
+
+.tilmeldsection #medlemh2 {
+  text-align: center;
+  padding: 3vh;
+  font-size: 5vh;
+  color: #D3AC2B;
+  margin-top: 0;
+}
+
+.tilmeldsection p {
+  padding-left: 3vh;
+  color: white;
+  font-size: 3vh;
+}
+
+.tilmeldsection p #goldspan {
+  color: #D3AC2B;
+  font-size: 4vh;
 }
 
 .tilmeldsection #kategori.select {
@@ -114,6 +190,9 @@
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
+  margin-top: 0;
+
+
 
 }
 
@@ -171,6 +250,10 @@
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
+
+  margin-top: 0;
+
+
 
 }
 
