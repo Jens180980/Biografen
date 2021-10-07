@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <link rel="stylesheet" href="/assets/css/arrangamenter.css">
+    <script src="/assets/js/arrangamenter.js" defer></script>
+    <script src="assets/js/slider.js" defer></script>
+    <title>Biografen | Home</title>
+</head>
+
+<body>
+
+
+    <!-- Vores slider container  -->
+    <header class="slideshow">
+        <!-- Det her er antal billeder  -->
+        <img src="assets/images/biograf.jpg" alt="Biograf Kino" class="slide">
+        <img src="assets/images/14d42544dd9249c7b15fe2d405aeb2e8_biograf1.jpg" alt="Biograf Kino" class="slide">
+        <img src="assets/images/Sal_01.jpg" alt="Biograf Kino" class="slide">
+        <img src="assets/images/Horror-i-biograferne-2013.jpg" alt="Biograf Kino" class="slide">
+
+
+
+        <!-- Prikker/dot m event til når man klikker -->
+        <div class="dot-cont">
+            <!-- 1 dot for hver slide -->
+            <div class="dot" onclick="clickChangeSlide(0)"></div>
+            <div class="dot" onclick="clickChangeSlide(1)"></div>
+            <div class="dot" onclick="clickChangeSlide(2)"></div>
+            <div class="dot" onclick="clickChangeSlide(3)"></div>
+        </div>
+
+    </header>
+
+    <!-- Arrangamenter html i grid -->
+    <section class="arrangamentersection">
+        <h2 id="arrangamenterh2">Månedlige arrangamenter</h2>
+        <p id="arrangamentp">
+            Vi organiserer månedlige arrangamenter til alle aldre, store og små. <br> I kan nyde filmen sammen men dine venner/veninder/familie og have en hyggeligt eftermiddag bagefter. 
+        </p>
+        <div id="arranggrid">
+            <figure>
+                <img src="/assets/images/coffeecake.jpg" alt="">
+                <figcaption>
+                    <h3 id="arrangamentertitle">Kaffe og kage - hygge</h3>
+                    <p>Der er intet som at sludre over en god kop kaffe, og caféer har den perfekte atmosfære til hyggeligt samvær på alle timer af døgnet. Nyd en kop valgfri kaffe og dagens kage sammen med en god ven, din kæreste eller en anden, du holder af, så i har mulighed for at snakke om den film i har lige set sammen. </p>
+                    <button id="tilmeldbutton"><a href="">Tilmeld dig</a></button> 
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="/assets/images/meetandgreet.jpg" alt="">
+                <figcaption>
+                    <h3 id="arrangamentertitle">Meet and greet</h3>
+                    <p>Invitation til børn: er et farvestrålende show, hvor store og små inviteres på en musikalsk rejse med Meet & Greet. Sang, dans, konfetti, LED-skærme samt Danmarks største sæbeboblemaskine er bare en del af deres kæmpeshow. Jeres børn har mulighed for at møde personligt de karakterer de har lige set i filmen. For eksempel: de berømte Paw Patrol.</p>
+                    <button id="tilmeldbutton"><a href="">Tilmeld dig</a></button>
+                </figcaption>
+            </figure>
+        </div>
+        
+    </section>
+
+    <!-- Tilmeld digselv section -->
+    <section class="tilmeldsection">
+        <h2 id="tilmeldh2">Tilmeld dig til: 
+            <select class="select" id="kategori" name="biolist" form="bioform" required>
+                <option value="select">Selekt en kategori</option>
+                <option value="seniorbio">Seniorbio</option>
+                <option value="Børnebio">Børnebio</option>
+                <option value="Arrangamenter">Månedlige arrangamenter</option>
+              </select>
+        </h2>
+        <form>
+                <fieldset>
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Dit navn"></input>
+                    </div>
+                    <div>
+                        <input type="text" name="adress" id="adress" placeholder="Din adresse"/>
+                    </div>
+                    <div>
+                        <input type="text" name="zip" id="zip" placeholder="Post kode"/>
+                    </div>
+                    <div>
+                        <input type="text" name ="city" id="city" placeholder="By"/>
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Indtast email"></input>
+                    </div>
+                    <div>
+                        <input type="number" name="telefon" id="telefon" placeholder="Indtast telefon"></input>
+                    </div>
+                    <div>
+                        <input type="textarea" name="textarea" id="textarea" placeholder="Kommentar"></input>
+                    </div>
+                    <div class="buttons">
+                        <button type="button" onclick="validate(this.form)">Tilmeld mig</button>
+                        <button type="reset">Nulstil felter</button>
+                    </div>
+                 </fieldset>
+            </form>
+    </section>
+
+    <!-- Bestil Billet section -->
+    <section>
+        <h2 id="bestilh2">Bestil billet</h2>
+    </section>
+
+    
+
+</body>
+
+</html>
