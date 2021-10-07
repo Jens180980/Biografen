@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 @-webkit-keyframes fadeOut {
@@ -75,6 +76,7 @@
   }
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -90,9 +92,11 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   background: #771830;
 }
+
 
 .loader {
   position: absolute;
@@ -115,8 +119,12 @@ body {
   width: 45vw;
 }
 
+
 .loader #wheel1,
 .loader #wheel2 {
+
+.loader #wheel1, .loader #wheel2 {
+
   -webkit-animation-name: Rotation;
           animation-name: Rotation;
   -webkit-animation-duration: 1s;
@@ -131,6 +139,7 @@ body {
           transform-origin: center;
   transform-box: fill-box;
 }
+
 
 .loader.hidden {
   -webkit-animation: fadeOut 1s 2s ease forwards;
@@ -202,4 +211,47 @@ footer article h4 {
 
 footer article li {
   list-style: none;
+
+@-webkit-keyframes Rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes Rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.loader.hidden {
+  -webkit-animation: fadeOut 1s 2s ease forwards;
+          animation: fadeOut 1s 2s ease forwards;
+}
+
+@-webkit-keyframes fadeOut {
+  100% {
+    background-color: #3f5c40;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    background-color: #3f5c40;
+    opacity: 0;
+    visibility: hidden;
+  }
+
 }
