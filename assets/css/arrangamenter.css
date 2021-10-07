@@ -7,16 +7,28 @@
 }
 
 .arrangamentersection #arrangamenterh2 {
+
+  color: #d3ac2b;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
+
   text-align: center;
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
+
 }
 
 .arrangamentersection #arrangamentp {
   font-family: 'Karla', sans-serif;
   margin-left: 5%;
+
+  color: #f0f0e5;
+
   color: white;
+
   font-size: 3vh;
   padding: 2vh;
 }
@@ -32,14 +44,22 @@
 }
 
 .arrangamentersection #arranggrid figure figcaption {
+
+  color: #f0f0e5;
+
   color: white;
+
   font-size: 3vh;
   padding: 2vh;
   float: right;
 }
 
 .arrangamentersection #arranggrid figure figcaption #arrangamentertitle {
+
+  color: #d3ac2b;
+
   color: #D3AC2B;
+
   padding: 3vh;
 }
 
@@ -54,7 +74,11 @@
 }
 
 .arrangamentersection #arranggrid figure figcaption #tilmeldbutton a {
+
+  color: #d3ac2b;
+
   color: #D3AC2B;
+
   font-weight: bold;
 }
 
@@ -70,15 +94,27 @@
 
 .tilmeldsection #kategori.select {
   height: 5vh;
+
+  color: #d3ac2b;
+
   color: #D3AC2B;
+
   font-size: 2.5vh;
 }
 
 .tilmeldsection #tilmeldh2 {
+
+  color: #d3ac2b;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
+
   text-align: center;
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
+
 }
 
 .tilmeldsection form {
@@ -124,10 +160,18 @@
 }
 
 #bestilh2 {
+
+  color: #d3ac2b;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
+
   text-align: center;
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
+
 }
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
