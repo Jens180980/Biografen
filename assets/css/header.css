@@ -11,12 +11,10 @@
 --red:#771830;
 }
 
-
 a {
     color: var(--gold);
     text-decoration: none;
     font-family: 'Karla';
-    font-weight: 700;
     transition: 200ms;
 }
 a:hover {
@@ -30,7 +28,6 @@ li {
 header {
     position: sticky;
     top: 0;
-    height: 15vh;
     background-color: var(--black);
 }
 
@@ -42,7 +39,8 @@ header {
 }
 
 #header-logo {
-    width: 5vw;  
+    width: 5vw;
+    padding: 1rem;  
 }
 
 #quick-links {
@@ -69,10 +67,14 @@ nav {
     position: absolute;
     top:15vh;
     right: 0;
+    height: 100vh;
     background-color: var(--black);
 }
 .show-nav {
-    display: block;
+    display: block !important;
+}
+.show-nav-items {
+    display: block !important;
 }
 nav li {
     color: var(--gold);
@@ -85,7 +87,7 @@ nav li {
 nav li:hover {
     color: #fbcd35;
 }
-nav li ul {
+#kinoList, #facilitiesList, #moviesList {
     display: none;
 }
 
