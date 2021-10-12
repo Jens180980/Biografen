@@ -22,10 +22,8 @@
 }
 
 .specialforestillinger .specialfgrid {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
 }
 
 .specialforestillinger .specialfgrid figure {
@@ -82,10 +80,8 @@
 }
 
 .arrangamentersection #arranggrid figure {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 60%;
-      grid-template-columns: 40% 60%;
+  grid-template-columns: 40% 60%;
   width: 90%;
   margin: auto;
   padding-bottom: 5vh;
@@ -156,15 +152,9 @@
 
 .tilmeldsection .center-box {
   height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .tilmeldsection .center-box select {
@@ -199,8 +189,7 @@
 
 .tilmeldsection input {
   width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 10px;
   margin: 8px 0;
 }
@@ -270,12 +259,8 @@
 }
 
 .tilmeldsection #betaling .paymentdiv .row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .tilmeldsection #betaling #tilmeldbutton {
@@ -303,27 +288,14 @@
     width: 60%;
     margin: auto;
   }
+  header img {
+    width: 10vw;
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .specialforestillinger .specialfgrid {
     display: block;
-  }
-  .arrangamentersection #arranggrid figure {
-    display: block;
-  }
-  .tilmeldsection #kategori.select {
-    font-size: 3vh;
-  }
-  .tilmeldsection form {
-    width: 80%;
-    margin: auto;
-  }
-  #kategori.select {
-    font-size: 3vh;
-  }
-  form {
-    width: 80%;
-    margin: auto;
   }
 }

@@ -44,9 +44,9 @@ body{
 }
 // Her starter page loader!!!
 
-    font-family: 'Roboto', sans-serif;
-    outline: none;
-}
+//     font-family: 'Roboto', sans-serif;
+//     outline: none;
+// }
 
 html {
     scroll-behavior: smooth;
@@ -109,7 +109,7 @@ html {
         transform-origin: center;
         transform-box: fill-box;
     }
-}
+
 // .loader.hidden er css'en der bliver kaldt fra js så "page loadern" forsvinder
 .loader.hidden {
     animation: fadeOut 2s 2s linear forwards;
@@ -193,7 +193,6 @@ footer {
     
     }
 
-<<<<<<< HEAD
     svg {
         width: 45vw;
     }
@@ -222,7 +221,6 @@ footer {
         display: block;
     }
 }
-=======
 #loader {
     width: 45vw;
 }
@@ -274,4 +272,4 @@ footer {
 .loader.hidden {
     animation: fadeOut 1s 2s ease forwards;
 }
->>>>>>> main
+}
