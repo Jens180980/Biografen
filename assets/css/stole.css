@@ -3,15 +3,13 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   outline: none;
 }
 
 svg .sitHover:hover {
-  -webkit-filter: brightness(80%);
-          filter: brightness(80%);
+  filter: brightness(80%);
   cursor: pointer;
 }
 

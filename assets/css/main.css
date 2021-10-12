@@ -1,12 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
-
-@-webkit-keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
-}
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 @keyframes fadeOut {
   100% {
     opacity: 0;
@@ -14,56 +9,21 @@
   }
 }
 
-@-webkit-keyframes Rotation {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
-
 @keyframes Rotation {
   from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-}
-
-@-webkit-keyframes slideIn {
-  0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
+    transform: rotateZ(360deg);
   }
 }
 
 @keyframes slideIn {
   0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
+    transform: translate(-100vw, 0);
   }
   100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    background: rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    background: rgba(255, 255, 255, 0.9);
+    transform: translate(0, 0);
   }
 }
 
@@ -76,14 +36,12 @@
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: "Karla", sans-serif;
   outline: none;
 }
@@ -93,32 +51,31 @@ html {
 }
 
 body {
+  background-color: #611427;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   background: #771830;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   outline: none;
 }
 
 html {
   scroll-behavior: smooth;
-
 }
 
 .loader {
   position: absolute;
   width: 100%;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   background-color: #1d2326;
   z-index: 90000;
 }
@@ -129,23 +86,37 @@ html {
 
 .loader #wheel1,
 .loader #wheel2 {
-  -webkit-animation-name: Rotation;
-          animation-name: Rotation;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  animation-name: Rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  transform-origin: center;
   transform-box: fill-box;
 }
 
 .loader.hidden {
+  animation: fadeOut 1s 2s ease forwards;
+}
 
+svg {
+  width: 45vw;
+}
+
+#wheel1,
+#wheel2 {
+  animation-name: Rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+.loader.hidden {
+  animation: fadeOut 2s 2s linear forwards;
+}
 
 #zoomOut {
   position: absolute;
@@ -153,86 +124,18 @@ html {
   height: 0vw;
   background-color: #611427;
   border-radius: 50%;
-  -webkit-animation-name: zoomOut;
-          animation-name: zoomOut;
-  -webkit-animation-duration: 0.1s;
-          animation-duration: 0.1s;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
-@-webkit-keyframes Rotation {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-
-  -webkit-animation: fadeOut 1s 2s ease forwards;
-          animation: fadeOut 1s 2s ease forwards;
-
+  animation-name: zoomOut;
+  animation-duration: 0.1s;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
 }
 
 footer {
   background: #1d2326;
 }
 
-<<<<<<< HEAD
 footer #logodiv {
-=======
-
-@-webkit-keyframes zoomOut {
-  0% {
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-  }
-  100% {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0%;
-  }
-}
-
-@keyframes zoomOut {
-  0% {
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-  }
-  100% {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0%;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  100% {
-    background-color: #611427;
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes fadeOut {
-  100% {
-    background-color: #611427;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-footer div {
->>>>>>> main
   padding: 2em;
   padding-top: 5em;
 }
@@ -242,8 +145,7 @@ footer #logodiv img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
+  transform: rotate(30deg);
 }
 
 footer #logodiv h2 {
@@ -257,10 +159,8 @@ footer #logodiv h2 {
 }
 
 footer #gridfooter {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
   padding: 0;
 }
 
@@ -277,9 +177,7 @@ footer #gridfooter .footerleft h3 {
 
 footer #gridfooter .footerleft #social {
   color: #f0f0e5;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 footer #gridfooter .footerleft i {
@@ -320,29 +218,69 @@ footer svg {
 
 footer #wheel1,
 footer #wheel2 {
-  -webkit-animation-name: Rotation;
-          animation-name: Rotation;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
-  -webkit-transform-origin: center;
-          transform-origin: center;
+  animation-name: Rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  transform-origin: center;
   transform-box: fill-box;
 }
 
 footer .loader.hidden {
-  -webkit-animation: fadeOut 1s 2s ease forwards;
-          animation: fadeOut 1s 2s ease forwards;
-
+  animation: fadeOut 1s 2s ease forwards;
 }
 
 @media screen and (max-width: 800px) {
   footer #gridfooter {
     display: block;
   }
+}
+
+#loader {
+  width: 45vw;
+}
+
+#wheel1,
+#wheel2 {
+  animation-name: Rotation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: none;
+  transform-origin: center;
+}
+
+@keyframes Rotation {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0%;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    background-color: #611427;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader.hidden {
+  animation: fadeOut 1s 2s ease forwards;
 }
