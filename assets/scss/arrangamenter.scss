@@ -271,41 +271,53 @@ $black: black;
     }
 }
 
-//Media queries telefon
-@media screen and (max-width: 800px) {
+// HEADER MED NAVIGATION STYLING
+header {
+    img {
+        width: 10vw;
+        display: none;
 
-
-    .arrangamentersection{
-
-    .arrangamentersection {
-
-        #arranggrid {
-            figure {
-                display: block;
-            }
-        }
-    }
-    .tilmeldsection {
-
-        #kategori.select{
-            font-size: 3vh;
-        }
-        form{
-            width: 80%;
-            margin:auto;
-          
-        }
-    }
-    
- }
-
-        #kategori.select {
-            font-size: 3vh;
-        }
-        form {
-            width: 80%;
-            margin: auto;
-        }
     }
 }
 
+
+// //Media queries telefon
+// @media screen and (max-width: 800px) {
+
+
+//     .arrangamentersection{
+
+//     .arrangamentersection {
+
+//         #arranggrid {
+//             figure {
+//                 display: block;
+//             }
+//         }
+//     }
+//     .tilmeldsection {
+
+//         #kategori.select{
+//             font-size: 3vh;
+//         }
+//         form{
+//             width: 80%;
+//             margin:auto;
+          
+//         }
+//     }
+    
+//  }
+
+//         #kategori.select {
+//             font-size: 3vh;
+//         }
+//         form {
+//             width: 80%;
+//             margin: auto;
+//         }
+//     }
+// }
+
+
+}
