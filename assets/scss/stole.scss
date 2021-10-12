@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+//COLOR MODS
+$armsR: #500e21;
+$sitR: #611427;
+$backR: #310d19;
+
+$armsB: #1E2043;
+$sitB: #242754;
+$backB: #000040;
+
+
+@mixin optagetSit {
+    .arms {
+        rect {
+            fill: $armsR;
+        }
+    }
+    .sit {
+        fill: $sitR;
+    }
+    .back {
+        fill: $backR;
+    }
+}
+@mixin valgtSit {
+    .arms {
+        rect {
+            fill: $armsB;
+        }
+    }
+    .sit {
+        fill: $sitB;
+    }
+    .back {
+        fill: $backB;
+    }
+}
+
+
+svg {
+    .sitHover:hover {
+        filter: brightness(80%);
+        cursor: pointer;
+    }
+    .sitHoverRED{
+        @include optagetSit;
+        cursor: not-allowed
+    }
+}
+
+.valgt{
+    @include valgtSit;
+}

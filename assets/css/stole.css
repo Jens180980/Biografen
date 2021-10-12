@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+}
+
+svg .sitHover:hover {
+  -webkit-filter: brightness(80%);
+          filter: brightness(80%);
+  cursor: pointer;
+}
+
+svg .sitHoverRED {
+  cursor: not-allowed;
+}
+
+svg .sitHoverRED .arms rect {
+  fill: #500e21;
+}
+
+svg .sitHoverRED .sit {
+  fill: #611427;
+}
+
+svg .sitHoverRED .back {
+  fill: #310d19;
+}
+
+.valgt .arms rect {
+  fill: #1E2043;
+}
+
+.valgt .sit {
+  fill: #242754;
+}
+
+.valgt .back {
+  fill: #000040;
+}
