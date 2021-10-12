@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
 
+@import "helpers/variabler";
+@import "helpers/mixin";
 
-
+//farver
 $gold:#D3AC2B;
 $red:#771830;
 $white: white;
 $black: black;
+
 //mixin til styles som genbruges
 @mixin h2text {
     // font-family: 'Ephesis', cursive;
@@ -26,6 +29,8 @@ $black: black;
     color: $white;
     font-size: 3vh;
 }
+
+//header picture styling
 .headerpicture {
     height:50vh;
     background-image: url(/assets/images/Sal_02.jpg);
@@ -33,6 +38,7 @@ $black: black;
     background-position: -100px --100px;
 }
 
+//specialforestillinger styling
 .specialforestillinger {
     font-family: 'Karla', sans-serif;
     @include redbackground();
@@ -61,25 +67,16 @@ $black: black;
                 }
             }
         }
-        
-    }
-    
-
+    } 
 }
-@import "helpers/variabler";
-@import "helpers/mixin";
 
 //style arrangamenter
 .arrangamentersection {
     font-family: 'Karla', sans-serif;
     @include redbackground();
     #arrangamenterh2 {
-
         @include h2text();
-        
-
         @include heading();
-
     }
     #arrangamentp {
         font-family: 'Karla', sans-serif;
@@ -101,34 +98,21 @@ $black: black;
             margin: auto;
             padding-bottom: 5vh;
 
-            
             figcaption {
                 @include whiteparagraph();
                 padding:2vh;
                 float: right;
-                #arrangamentertitle {
-                    color: $gold;
-                    
-
-            figcaption {
-                color: $white;
                 font-size: 3vh;
-                padding: 2vh;
-                float: right;
                 #arrangamentertitle {
                     color: $gold;
                     padding: 3vh;
-
                 }
                 p {
                     padding-left: 3vh;
                 }
                 #tilmeldbutton {
-
                    margin-left: 5%;
-
                     margin: 10%;
-
                     padding: 2vh;
                     // border: 1px solid white;
                     background: transparent;
@@ -146,8 +130,6 @@ $black: black;
     }
 }
 
-    
-
 
 // medlemskab og tilmeld digselv section styling
 .tilmeldsection {
@@ -164,21 +146,12 @@ $black: black;
             font-size: 4vh;
         }
     }
-    #kategori.select{
-        height:5vh;
-
-
-.tilmeldsection {
-    font-family: 'Karla', sans-serif;
-    @include redbackground();
     #kategori.select {
         height: 5vh;
-
         color: $gold;
         font-size: 2.5vh;
     }
     #tilmeldh2 {
-
         @include h2text();
     }
     form{
@@ -186,16 +159,8 @@ $black: black;
         margin:auto;
         padding-bottom: 4vh;
     }
-    
-
         @include heading();
     }
-    form {
-        width: 50%;
-        margin: auto;
-        padding-bottom: 4vh;
-    }
-
     input {
         width: 100%;
         box-sizing: border-box;
@@ -211,7 +176,6 @@ $black: black;
         width: 100%;
         font-size: 2vh;
     }
-
     #textarea {
         height: 100px;
     }
@@ -225,27 +189,13 @@ $black: black;
         color: red;
         font-size: 2vh;
     }
-}
-
-#bestilh2 {
+    #bestilh2 {
     @include h2text();
-}
-
-
-
-//Media queries tablet
-@media screen and (max-width: 1200px) and (min-width: 800px) {
-    .arrangamentersection{
-
-
-#bestilh2 {
-    @include heading();
-}
+    }
 
 //Media queries tablet
 @media screen and (max-width: 1200px) and (min-width: 800px) {
     .arrangamentersection {
-
         #arranggrid {
             figure {
                 img {
@@ -258,7 +208,6 @@ $black: black;
         }
     }
     .tilmeldsection {
-
         form{
             width: 60%;
             margin:auto;
@@ -280,12 +229,13 @@ header {
     }
 }
 
-
 // //Media queries telefon
 // @media screen and (max-width: 800px) {
+}
+//Media queries telefon
+@media screen and (max-width: 800px) {
 
-
-//     .arrangamentersection{
+    .arrangamentersection {
 
 //     .arrangamentersection {
 
@@ -309,15 +259,3 @@ header {
     
 //  }
 
-//         #kategori.select {
-//             font-size: 3vh;
-//         }
-//         form {
-//             width: 80%;
-//             margin: auto;
-//         }
-//     }
-// }
-
-
-}
