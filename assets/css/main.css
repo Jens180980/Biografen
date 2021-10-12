@@ -144,8 +144,6 @@ html {
   transform-box: fill-box;
 }
 
-.loader.hidden {
-
 
 #zoomOut {
   position: absolute;
@@ -185,10 +183,6 @@ html {
 footer {
   background: #1d2326;
 }
-
-<<<<<<< HEAD
-footer #logodiv {
-=======
 
 @-webkit-keyframes zoomOut {
   0% {
@@ -232,7 +226,6 @@ footer #logodiv {
   }
 
 footer div {
->>>>>>> main
   padding: 2em;
   padding-top: 5em;
 }
