@@ -186,6 +186,9 @@ footer {
   background: #1d2326;
 }
 
+<<<<<<< HEAD
+footer #logodiv {
+=======
 
 @-webkit-keyframes zoomOut {
   0% {
@@ -229,10 +232,12 @@ footer {
   }
 
 footer div {
+>>>>>>> main
   padding: 2em;
+  padding-top: 5em;
 }
 
-footer div img {
+footer #logodiv img {
   width: 15%;
   display: block;
   margin-left: auto;
@@ -241,7 +246,7 @@ footer div img {
           transform: rotate(30deg);
 }
 
-footer h2 {
+footer #logodiv h2 {
   color: #d3ac2b;
   font-family: 'Ephesis', cursive;
   font-size: 3em;
@@ -251,52 +256,70 @@ footer h2 {
   padding: 0;
 }
 
-footer h3 {
+footer #gridfooter {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  padding: 0;
+}
+
+footer #gridfooter .footerleft {
+  padding: 0;
+}
+
+footer #gridfooter .footerleft h3 {
   color: #f0f0e5;
   text-align: center;
   font-family: 'Karla', sans-serif;
   margin: 1em;
 }
 
-footer #social {
+footer #gridfooter .footerleft #social {
   color: #f0f0e5;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-footer i {
+footer #gridfooter .footerleft i {
   margin-right: 0.5em;
 }
 
-footer i:hover {
+footer #gridfooter .footerleft i:hover {
   color: #d3ac2b;
 }
 
-footer article {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+footer #gridfooter article.footerright {
+  padding: 0 !important;
+  text-align: center;
   padding: 2em;
   color: #f0f0e5;
   font-family: 'Karla', sans-serif;
+  color: #f0f0e5;
 }
 
-footer article h4 {
+footer #gridfooter article.footerright #span {
+  color: #f0f0e5;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  margin: 1em;
+}
+
+footer #gridfooter article.footerright h4 {
   padding-bottom: 0.5em;
 }
 
-footer article li {
+footer #gridfooter article.footerright li {
   list-style: none;
 }
 
-svg {
+footer svg {
   width: 45vw;
 }
 
-#wheel1,
-#wheel2 {
+footer #wheel1,
+footer #wheel2 {
   -webkit-animation-name: Rotation;
           animation-name: Rotation;
   -webkit-animation-duration: 1s;
@@ -312,8 +335,14 @@ svg {
   transform-box: fill-box;
 }
 
-.loader.hidden {
+footer .loader.hidden {
   -webkit-animation: fadeOut 1s 2s ease forwards;
           animation: fadeOut 1s 2s ease forwards;
 
+}
+
+@media screen and (max-width: 800px) {
+  footer #gridfooter {
+    display: block;
+  }
 }

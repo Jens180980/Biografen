@@ -30,8 +30,12 @@
     <link href="/_FILES/webfonts/all.css" rel="stylesheet">
     <!-- JAVASCRIPT -->
     <script src="assets/js/slider.js" defer></script>
+<<<<<<< HEAD
+    <script src="assets/js/scripts.js" defer></script>
+=======
     <script src="./assets/js/scripts.js" defer></script>
     <script src="assets/js/header.js" defer></script>
+>>>>>>> main
     <title>Biografen | Home</title>
 </head>
 
@@ -90,6 +94,8 @@
 <div id="zoomOut"></div>
     </div>
 
+<<<<<<< HEAD
+=======
 <!-- Header med navigation -->
 <header id="header">
     <div id="header-wrap">
@@ -180,6 +186,7 @@
 </header>
 
 
+>>>>>>> main
     <!-- Vores slider container  -->
     <section class="slideshow">
         <!-- Det her er antal billeder  -->
@@ -202,59 +209,87 @@
 
     </header>
 
+<<<<<<< HEAD
+    <!-- aktuelle film section -->
+=======
 
 
+>>>>>>> main
     <section id="index">
-        <figure>
-            <h2>Meet and greet</h2>
-            <img src="/assets/images/kidsevent.jpg" alt="Kino biograf arrangamenter meetandgreet">
-            <figcaption>
+        <h2>Aktuelle film</h2>
+        <div class="figuregrid" id="figuregrid">
+            <figure>
+                <h2>Citizenfour</h2>
+                <img src="/assets/images/poster/Poster-Citizenfour.jpg" alt="Kino biograf arrangamenter meetandgreet">
+                <!-- video press play -->
+                <a href="javascript:void(0);" onclick="playVideo('./assets/images/Media/Citizenfour.mp4');"><img id="playvideo1"src="/assets/images/playvideo.png" alt=""></a>
+                <figcaption>
+                    <p class="boldp">RESUMÉ</p>
+                    <p>Dokumentarfilmen 'Citizenfour' handler om whistlebloweren Edward Snowden. Dokumentaristen Laura Poitras, var med helt fra starten og portrætterer Snowden gennem adskillige møder med ham.</p>
+                    <p>Filmen tager sin begyndelse da Poitras flyver til Hong Kong, for at møde manden bag en række anonyme mails hun har modtaget. Det eneste de var underskrevet med var: Citizen Four. Han var klar til at afsløre hvordan NSA m.fl. benyttede sig af skjult overvågning.</p>
+                    <p>Produktet er en thriller, der udfolder sig foran tilskueren.</p>
+                </figcaption>
+            </figure>
 
-                <p>Invitation til børn: er et farvestrålende show, hvor store og små inviteres på en musikalsk rejse med Meet & Greet. Sang, dans, konfetti, LED-skærme samt Danmarks største sæbeboblemaskine er bare en del af deres kæmpeshow. Jeres børn har
-                    mulighed for at møde personligt de karakterer de har lige set i filmen. For eksempel: de berømte Paw Patrol.</p>
-                <a href="">Se mere her!</a>
-            </figcaption>
-        </figure>
-        <figure>
-            <h2>Ida - ugens aktuelle film</h2>
-            <img src="/assets/images/poster/Poster-Ida.gif" alt="Ida poster Kino biograf">
-            <figcaption>
-                <p>’Ida’ er filmet i smukke sort/hvide billeder og kombinerer på én gang de barske realiteter fra jødeforfølgelsen under Anden Verdenskrig med fortællingen om en ung piges (dragende spillet af Agata Trzebuchowska) religiøse identitet samt
-                    spirende seksualitet. Filmen, der er årets Oscar-kandidat fra Polen, indeholder desuden genregreb fra den klassiske road movie og er instrueret af Pawel Pawlikowski, der tidligere har stået bag ’My Summer of Love’ og ’The Woman in
-                    the Fifth’. </p>
-                <a href="">Se den nu!</a>
-            </figcaption>
-        </figure>
+            <figure>
+                <h2>Ida</h2>
+                <img src="/assets/images/poster/Poster-Ida.gif" alt="Ida poster Kino biograf">
+                <a href="javascript:void(0);" onclick="playVideo('./assets/images/Media/Ida_Official.mp4');"><img  id="playvideo2"src="/assets/images/playvideo.png" alt=""></a> 
+                <figcaption id="idafigcaption">
+                    <p class="boldp">RESUMÉ</p>
+                    <p>Det polske drama 'Ida' handler om en 17-årig pige, der i 1960ernes Polen er på vej til at blive nonne.</p>
+                    <p>Ida er mere eller mindre vokset op på klostret og har ingen kontakt til sin familie. Alligevel føler den unge novice et stærkt behov for at opsøge sin eneste slægtning, morens søster Wanda, før hun tager sit klosterløfte.</p>
+                    <p>Mosteren besidder en magtfuld stilling som højesteretsdommer, men lever derudover et lettere alkoholiseret og løssluppent liv langt fra Idas puritanske hverdag. Hun har gang på gang afvist sin nieces ønske om at komme på besøg, og da Ida pludseligt står uden for døren med et kors om halsen, og en beskeden bagage under armen, lukker Wanda hende modvilligt ind.</p>
+                    <div class="toggleText texthidden">
+                        <p>Snart opdager Ida sandheden om sin familie, der forsvandt under besættelsestiden, og i fællesskab med sin moster rejser den unge pige nu tilbage til sin fødeby for at afdække deres tragiske familiehistorie og muligvis lære sig selv bedre at kende.</p>
+                        <p>’Ida’ er filmet i smukke sort/hvide billeder og kombinerer på én gang de barske realiteter fra jødeforfølgelsen under Anden Verdenskrig med fortællingen om en ung piges (dragende spillet af Agata Trzebuchowska) religiøse identitet samt spirende seksualitet.</p>
+                        <p>Filmen, der er årets Oscar-kandidat fra Polen, indeholder desuden genregreb fra den klassiske road movie og er instrueret af Pawel Pawlikowski, der tidligere har stået bag ’My Summer of Love’ og ’The Woman in the Fifth’.</p>
+                    </div>
+                    <!-- video press play -->
+                    <!-- "javascript:void(0);"" -> means that the page is not reloading, because it´s a "js link". a js function will happen -->
+                    <p><a href="javascript:void(0);" onclick="toggleExpand(this);">↓ Læs videre</a></p>
+                </figcaption>
+            </figure>
+        </div>
+        <!-- hvor video spilles -->
+        <div class="video">
+            <img src="./assets/images/close.png" class="close" onclick="closeVideo();" alt="">
+        </div> 
     </section>
+
     <footer>
         <!-- Vigtige - kort info -->
-        <div>
+        <div id="logodiv">
             <img src="assets/logo/logo.svg" alt="kino logo biograf">
             <h2>Kino</h2>
-            <h3>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i></h3>
-            <h3><i class="fas fa-map-pin"></i>Haveje 33-35 • 1840 Avedøre</h3>
-            <h3> <i class="fas fa-phone-alt"></i>55 33 23 16</h3>
-            <h3><i class="fas fa-mail-bulk"></i>Biografen@mail.dk</h3>
         </div>
-        <!-- Mere dyb info -->
-        <article>
-            <span>
-        <h4>Forestillinger:</h4>
-        <li> Senior Bio: Man.- Tor.: 14.00 - 16.00</li>
-        <li>Første Forestilling: 16.15 - 18.00</li>
-        <li>Anden Forestilling: 18.30 - 21.00</li>
-        <li>Anden Forestilling: 21.15 - 22.00</li>
-        <li>Fred. lørd. Midnat: 22.30 - 02.00</li>
-    </span>
-            <span>
-        <p>Billettelefonen er åben 30 min før dagens første forestilling.</p>
-    </span>
-            <span>
-        <p>Køb billetter online via: www.kino.dk</p>
-    </span>
-        </article>
+        <div id="gridfooter"> 
+            <div class="footerleft">
+                <h3>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i></h3>
+                <h3><i class="fas fa-map-pin"></i>Haveje 33-35 • 1840 Avedøre</h3>
+                <h3> <i class="fas fa-phone-alt"></i>55 33 23 16</h3>
+                <h3><i class="fas fa-mail-bulk"></i>Biografen@mail.dk</h3>
+            
+            </div>
+               
+            <!-- Mere dyb info -->
+            <article class="footerright">
+                <span id="span">
+                    <h4>Forestillinger:</h4>
+                    <li> Senior Bio: Man.- Tor.: 14.00 - 16.00</li>
+                    <li>Første Forestilling: 16.15 - 18.00</li>
+                    <li>Anden Forestilling: 18.30 - 21.00</li>
+                    <li>Anden Forestilling: 21.15 - 22.00</li>
+                    <li>Fred. lørd. Midnat: 22.30 - 02.00</li>
+                </span>
+            </article>
+        </div>
+        <div id="sidsteinfo" style="text-align: center; padding-bottom:2em;">
+                <p>Billettelefonen er åben 30 min før dagens første forestilling.</p>
+                <p>Køb billetter online via: www.kino.dk</p>
+        </div>
     </footer>
 </body>
 

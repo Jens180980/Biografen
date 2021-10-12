@@ -130,8 +130,9 @@ html {
 //Footer
 footer {
     background: $black;
-    div {
+    #logodiv {
         padding: 2em;
+        padding-top: 5em;
         img {
             width: 15%;
             display: block;
@@ -139,42 +140,89 @@ footer {
             margin-right: auto;
             transform: rotate(30deg);
         }
-    }
-    h2 {
-        @include heading();
-        margin: 0;
-        padding: 0;
-    }
-    h3 {
-        color: $white;
-        text-align: center;
-        font-family: 'Karla', sans-serif;
-        margin: 1em;
-    }
-    #social {
-        color: $white;
-        justify-content: center;
-    }
-    i {
-        margin-right: 0.5em;
-        &:hover {
-            color: $gold;
+        h2 {
+            @include heading();
+            margin: 0;
+            padding: 0;
         }
     }
-    article {
+    #gridfooter {
         display: grid;
-        grid-template-columns: auto auto auto;
-        padding: 2em;
-        @include text();
-        h4 {
-            padding-bottom: 0.5em;
+        grid-template-columns: auto auto;
+        padding: 0;
+        .footerleft {
+            padding: 0;
+            h3 {
+                color: $white;
+                text-align: center;
+                font-family: 'Karla', sans-serif;
+                margin: 1em;
+            }
+            #social {
+                color: $white;
+                justify-content: center;
+            }
+            i {
+                margin-right: 0.5em;
+                &:hover {
+                    color: $gold;
+                }
+            }
         }
-        li {
-            list-style: none;
-        }
+        
+        article.footerright{
+            padding: 0 !important;
+                text-align: center;
+                padding: 2em;
+                @include text();
+                color: $white;
+                #span {
+                    color: $white;
+                    text-align: center;
+                    font-family: 'Karla', sans-serif;
+                    margin: 1em;
+                }
+                h4 {
+                    padding-bottom: 0.5em;
+                }
+                li {
+                    list-style: none;
+                }
+            }
+           
+    
+    }
+
+<<<<<<< HEAD
+    svg {
+        width: 45vw;
+    }
+
+    #wheel1,
+    #wheel2 {
+        animation-name: Rotation;
+        animation-duration: 1s;
+        // animation-delay: ;
+        animation-iteration-count: infinite;
+        // animation-direction: ;
+        animation-timing-function: linear;
+        animation-fill-mode: none;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+
+    .loader.hidden {
+        animation: fadeOut 1s 2s ease forwards;
     }
 }
 
+//media queries til footer
+@media screen and (max-width: 800px) {
+    footer #gridfooter {
+        display: block;
+    }
+}
+=======
 #loader {
     width: 45vw;
 }
@@ -226,3 +274,4 @@ footer {
 .loader.hidden {
     animation: fadeOut 1s 2s ease forwards;
 }
+>>>>>>> main
