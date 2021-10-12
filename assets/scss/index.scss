@@ -29,7 +29,7 @@
     }
     .dot-cont {
         position: absolute;
-        z-index: 11;
+        z-index: 10;
         bottom: 5px;
         width: 100px;
         height: 20px;
@@ -74,15 +74,75 @@ a {
 }
 
 //Sektion med figure
-#index {
+.figuregrid {
     display: grid;
     grid-template-columns: auto auto;
+    position: relative;
     figure {
         margin: 3em;
-        img {
-            width: 100%;
+        text-align: center;
+        .boldp{
+            font-weight: bold;
         }
+        img {
+            max-width: 80%;
+            height: auto;
+            opacity: 0.6;
+        }
+        #playvideo1 {
+            position: absolute;
+            width: 15%;
+            top:25%;
+            left:18%;
+            opacity: 1;
+        }
+        #playvideo2 {
+            position: absolute;
+            width: 15%;
+            top:25%;
+            left:69%;
+            opacity: 1;
+        }
+        .texthidden {
+            display: none;
+        }
+       
     }
+   
+}
+
+
+//   Styling af video pop-up 
+.video.active {
+    visibility: visible;
+}
+.video {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background:rgba(0,0,0,0.95);
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+.video video {
+    position: relative;
+    max-width: 80%;
+    outline: none;
+}
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    filter: invert(1);
+    max-width: 40px;
+
 }
 
 // header - om os
@@ -123,4 +183,48 @@ h1 {
     height: 80vh;
     background: url("/assets/images/Kultur_3D-film_06-0_423539a.jpg");
     background-size: cover;
+}
+
+//Media queries tablet
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+.figuregrid {
+    display: block;
+     img#playvideo1 {
+        position: absolute;
+        width: 25%;
+        top:15%;
+        left:38%;
+        opacity: 1;
+    }
+    img#playvideo2 {
+        position: absolute;
+        width: 25%;
+        top:65%;
+        left:38%;
+        opacity: 1;
+    }
+}
+
+}
+
+//Media queries telefon
+@media screen and (max-width: 800px) {
+    .figuregrid {
+        display: block;
+        img#playvideo1 {
+            position: absolute;
+            width: 25%;
+            top:15%;
+            left:38%;
+            opacity: 1;
+        }
+        img#playvideo2 {
+            position: absolute;
+            width: 25%;
+            top:65%;
+            left:38%;
+            opacity: 1;
+        }
+    }
+
 }

@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="assets/css/slider.css">
     <!-- <link rel="stylesheet" href="/assets/css/index.css"> -->
     <link rel="stylesheet" href="/assets/css/arrangamenter.css">
-    <script src="/assets/js/arrangamenter.js" defer></script>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/_FILES/webfonts/all.css" rel="stylesheet">
     
+    <script src="/assets/js/arrangamenter.js" defer></script>
     <title>Biografen | Home</title>
 </head>
 
@@ -89,47 +91,108 @@
         <p> <span id="goldspan">24 film</span> og meet and greet bagefter med sodavand og frisk frugt - til kun 4000 dkk;</p>
 
         <!-- tilmeld dig formular -->
-        <h2 id="tilmeldh2">Tilmeld dig til: 
+        <h2 id="tilmeldh2">Tilmeld dig til:</h2>
+        <h2 id="Hh2">+ Vælg arrangament</h2>
+        <div class="center-box">
             <select class="select" id="kategori" name="biolist" form="bioform" required>
-                <option value="select">Selekt en kategori</option>
-                <option value="seniorbio">Seniorbio</option>
+                <option value="">Selekt en kategori</option>
+                <optgroup label="Medlemskaber">
+                    <option value="seniorbio">Seniorbio</option>
                 <option value="Børnebio">Børnebio</option>
-                <option value="Arrangamenter">Månedlige arrangamenter</option>
-              </select>
-        </h2>
+                </optgroup>   
+                <optgroup label="Månedlige arrangamenter">
+                    <option value="Kaffe og hygge">Kaffe og hygge</option>
+                    <option value="Meet and greet">Meet and greet</option>
+                </optgroup>
+            </select>
+           
+        </div>
+        <h2 id="Hh2">+ Kontaktoplysninger</h2>
         <form>
-                <fieldset>
-                    <div>
-                        <input type="text" name="name" id="name" placeholder="Dit navn"></input>
+                <div>
+                    <input type="text" name="selectedOption" id="selectedOption" placeholder="Valgt kategori"></input>
+                </div>
+                <div>
+                    <input type="text" name="name" id="name" placeholder="Dit navn"></input>
+                </div>
+                <div>
+                    <input type="text" name="adress" id="adress" placeholder="Din adresse"/>
+                </div>
+                <div>
+                    <input type="text" name="zip" id="zip" placeholder="Post kode"/>
+                </div>
+                <div>
+                    <input type="text" name ="city" id="city" placeholder="By"/>
+                </div>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="Indtast email"></input>
+                </div>
+                <div>
+                    <input type="number" name="telefon" id="telefon" placeholder="Indtast telefon"></input>
+                </div>
+                <div>
+                    <input type="textarea" name="textarea" id="textarea" placeholder="Kommentar"></input>
+                </div>
+                <div class="buttons">
+                    <button id="nextbtn" type="button" onclick="openPayment()">Next</button>
+                </div>
+
+        </form>
+        <h2 id="Hh2">+ Betaling </h2>
+        <div id="betaling">
+            <div class="col-50">
+                <h3 id="betalingh3">Betaling</h3>
+                <div class="paymentdiv">
+                    <h3 style="color:white;">Accepteret betalingsmetoder:</h3>
+                    <img id="betalingimg" src="/assets/images/betalingslogo_02.jpg" alt="">
+                    <input type="text" id="cname" name="cardname" placeholder="Navn på kortet">
+                    <input type="text" id="ccnum" name="cardnumber" placeholder="Kortnummer : f eks: 1111-2222-3333-4444">
+                    <div class="row">
+                        <input type="text" id="expmonth" name="expmonth" placeholder="Udløbsmåned">
+                        <input type="text" id="expyear" name="expyear" placeholder="Udløbs år">
+                        <input type="text" id="cvv" name="cvv" placeholder="CVV">
                     </div>
-                    <div>
-                        <input type="text" name="adress" id="adress" placeholder="Din adresse"/>
-                    </div>
-                    <div>
-                        <input type="text" name="zip" id="zip" placeholder="Post kode"/>
-                    </div>
-                    <div>
-                        <input type="text" name ="city" id="city" placeholder="By"/>
-                    </div>
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="Indtast email"></input>
-                    </div>
-                    <div>
-                        <input type="number" name="telefon" id="telefon" placeholder="Indtast telefon"></input>
-                    </div>
-                    <div>
-                        <input type="textarea" name="textarea" id="textarea" placeholder="Kommentar"></input>
-                    </div>
-                    <div class="buttons">
-                        <button type="button" onclick="validate(this.form)">Tilmeld mig</button>
-                        <button type="reset">Nulstil felter</button>
-                    </div>
-                 </fieldset>
-            </form>
+              </div>
+            <button id="tilmeldbutton" type="button" onclick="succes()">Tilmeld mig</button>
+        </div>
+        </div>
     </section>
 
     
-
+    <footer>
+        <!-- Vigtige - kort info -->
+        <div id="logodiv">
+            <img src="assets/logo/logo.svg" alt="kino logo biograf">
+            <h2>Kino</h2>
+        </div>
+        <div id="gridfooter"> 
+            <div class="footerleft">
+                <h3>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i></h3>
+                <h3><i class="fas fa-map-pin"></i>Haveje 33-35 • 1840 Avedøre</h3>
+                <h3> <i class="fas fa-phone-alt"></i>55 33 23 16</h3>
+                <h3><i class="fas fa-mail-bulk"></i>Biografen@mail.dk</h3>
+            
+            </div>
+               
+            <!-- Mere dyb info -->
+            <article class="footerright">
+                <span id="span">
+                    <h4>Forestillinger:</h4>
+                    <li> Senior Bio: Man.- Tor.: 14.00 - 16.00</li>
+                    <li>Første Forestilling: 16.15 - 18.00</li>
+                    <li>Anden Forestilling: 18.30 - 21.00</li>
+                    <li>Anden Forestilling: 21.15 - 22.00</li>
+                    <li>Fred. lørd. Midnat: 22.30 - 02.00</li>
+                </span>
+            </article>
+        </div>
+        <div id="sidsteinfo" style="text-align: center; padding-bottom:2em; color:white;">
+                <p>Billettelefonen er åben 30 min før dagens første forestilling.</p>
+                <p>Køb billetter online via: www.kino.dk</p>
+        </div>
+    </footer>
 
     
 

@@ -13,7 +13,6 @@ $black: black;
 
 //mixin til styles som genbruges
 @mixin h2text {
-    // font-family: 'Ephesis', cursive;
     text-align: center;
     padding: 3vh;
     font-size: 5vh;
@@ -29,6 +28,7 @@ $black: black;
     color: $white;
     font-size: 3vh;
 }
+
 
 //header picture styling
 .headerpicture {
@@ -53,12 +53,12 @@ $black: black;
             #citizenpic {
                 width:60%;
                 padding:5%;
-                border: 1px solid white;
+                // border: 1px solid white;
             }
             #pawpic {
                 width: 60%;
                 padding:5%;
-                border: 1px solid white;
+                // border: 1px solid white;
             }
             figcaption {
                 @include whiteparagraph();
@@ -137,6 +137,7 @@ $black: black;
     @include redbackground();
     #medlemh2 {
         @include h2text();
+        @include heading();
     }
     p {
         padding-left: 3vh;
@@ -146,21 +147,33 @@ $black: black;
             font-size: 4vh;
         }
     }
-    #kategori.select {
-        height: 5vh;
-        color: $gold;
-        font-size: 2.5vh;
+   .center-box {
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        select{
+            color: $gold;
+            font-size: 5vh;
+        }
+    
+        
+    }
+    #Hh2 {
+        color: #D3AC2B;
+        font-size: 2em;
     }
     #tilmeldh2 {
         @include h2text();
+        @include heading();
     }
-    form{
+    form {
         width: 50%;
         margin:auto;
         padding-bottom: 4vh;
+        display: none;
     }
-        @include heading();
-    }
+    
     input {
         width: 100%;
         box-sizing: border-box;
@@ -173,8 +186,9 @@ $black: black;
     }
     button {
         height: 50px;
-        width: 100%;
+        width: 50%;
         font-size: 2vh;
+        margin-left: 25%;
     }
     #textarea {
         height: 100px;
@@ -192,9 +206,38 @@ $black: black;
     #bestilh2 {
     @include h2text();
     }
-
+    #betaling {
+        display: none;
+        text-align: center;
+        #betalingh3 {
+            @include h2text();
+            @include heading();
+        }
+        .paymentdiv {
+            width: 50%;
+            margin:auto;
+            #betalingimg {
+                width: 50%;
+            }
+            .row {
+                display: flex;
+                align-items: flex-start;
+            }
+        }
+        #tilmeldbutton {
+            width: 25%;
+            margin:auto;
+        }
+    }
+    
+}
 //Media queries tablet
 @media screen and (max-width: 1200px) and (min-width: 800px) {
+    .specialforestillinger {
+        .specialfgrid {
+        display: block;
+    }
+}
     .arrangamentersection {
         #arranggrid {
             figure {
@@ -222,7 +265,11 @@ $black: black;
 }
 //Media queries telefon
 @media screen and (max-width: 800px) {
-
+    .specialforestillinger {
+        .specialfgrid {
+        display: block;
+    }
+}
     .arrangamentersection {
 
         #arranggrid {

@@ -35,13 +35,11 @@
 .specialforestillinger .specialfgrid figure #citizenpic {
   width: 60%;
   padding: 5%;
-  border: 1px solid white;
 }
 
 .specialforestillinger .specialfgrid figure #pawpic {
   width: 60%;
   padding: 5%;
-  border: 1px solid white;
 }
 
 .specialforestillinger .specialfgrid figure figcaption {
@@ -60,31 +58,25 @@
 }
 
 .arrangamentersection #arrangamenterh2 {
-
-  color: #d3ac2b;
-  font-family: 'Ephesis', cursive;
-  font-size: 3em;
-  text-align: center;
-  padding: 3vh;
-
   text-align: center;
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
   margin-top: 0;
-
-
-
+  color: #D3AC2B;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
 }
 
 .arrangamentersection #arrangamentp {
   font-family: 'Karla', sans-serif;
   margin-left: 5%;
-
-  color: #f0f0e5;
-
   color: white;
-
+  font-size: 3vh;
+  padding: 2vh;
+  color: white;
   font-size: 3vh;
   padding: 2vh;
 }
@@ -100,24 +92,16 @@
 }
 
 .arrangamentersection #arranggrid figure figcaption {
-
-  color: #f0f0e5;
-
   color: white;
-
   font-size: 3vh;
   padding: 2vh;
   float: right;
+  font-size: 3vh;
 }
 
 .arrangamentersection #arranggrid figure figcaption #arrangamentertitle {
-
-  color: #d3ac2b;
-
   color: #D3AC2B;
-
   padding: 3vh;
-
 }
 
 .arrangamentersection #arranggrid figure figcaption p {
@@ -126,16 +110,13 @@
 
 .arrangamentersection #arranggrid figure figcaption #tilmeldbutton {
   margin-left: 5%;
+  margin: 10%;
   padding: 2vh;
   background: transparent;
 }
 
 .arrangamentersection #arranggrid figure figcaption #tilmeldbutton a {
-
-  color: #d3ac2b;
-
   color: #D3AC2B;
-
   font-weight: bold;
 }
 
@@ -155,6 +136,11 @@
   font-size: 5vh;
   color: #D3AC2B;
   margin-top: 0;
+  color: #D3AC2B;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
 }
 
 .tilmeldsection p {
@@ -168,38 +154,47 @@
   font-size: 4vh;
 }
 
-.tilmeldsection #kategori.select {
-  height: 5vh;
+.tilmeldsection .center-box {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
-  color: #d3ac2b;
-
+.tilmeldsection .center-box select {
   color: #D3AC2B;
+  font-size: 5vh;
+}
 
-  font-size: 2.5vh;
+.tilmeldsection #Hh2 {
+  color: #D3AC2B;
+  font-size: 2em;
 }
 
 .tilmeldsection #tilmeldh2 {
-
-  color: #d3ac2b;
-  font-family: 'Ephesis', cursive;
-  font-size: 3em;
-  text-align: center;
-  padding: 3vh;
-
   text-align: center;
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
   margin-top: 0;
-
-
-
+  color: #D3AC2B;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
 }
 
 .tilmeldsection form {
   width: 50%;
   margin: auto;
   padding-bottom: 4vh;
+  display: none;
 }
 
 .tilmeldsection input {
@@ -217,8 +212,9 @@
 
 .tilmeldsection button {
   height: 50px;
-  width: 100%;
+  width: 50%;
   font-size: 2vh;
+  margin-left: 25%;
 }
 
 .tilmeldsection #textarea {
@@ -238,26 +234,59 @@
   font-size: 2vh;
 }
 
-#bestilh2 {
-
-  color: #d3ac2b;
-  font-family: 'Ephesis', cursive;
-  font-size: 3em;
-  text-align: center;
-  padding: 3vh;
-
+.tilmeldsection #bestilh2 {
   text-align: center;
   padding: 3vh;
   font-size: 5vh;
   color: #D3AC2B;
-
   margin-top: 0;
+}
 
+.tilmeldsection #betaling {
+  display: none;
+  text-align: center;
+}
 
+.tilmeldsection #betaling #betalingh3 {
+  text-align: center;
+  padding: 3vh;
+  font-size: 5vh;
+  color: #D3AC2B;
+  margin-top: 0;
+  color: #D3AC2B;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
+}
 
+.tilmeldsection #betaling .paymentdiv {
+  width: 50%;
+  margin: auto;
+}
+
+.tilmeldsection #betaling .paymentdiv #betalingimg {
+  width: 50%;
+}
+
+.tilmeldsection #betaling .paymentdiv .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.tilmeldsection #betaling #tilmeldbutton {
+  width: 25%;
+  margin: auto;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
+  .specialforestillinger .specialfgrid {
+    display: block;
+  }
   .arrangamentersection #arranggrid figure {
     display: block;
   }
@@ -270,9 +299,16 @@
     width: 60%;
     margin: auto;
   }
+  .tilmeldsection form form {
+    width: 60%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 800px) {
+  .specialforestillinger .specialfgrid {
+    display: block;
+  }
   .arrangamentersection #arranggrid figure {
     display: block;
   }
@@ -280,6 +316,13 @@
     font-size: 3vh;
   }
   .tilmeldsection form {
+    width: 80%;
+    margin: auto;
+  }
+  #kategori.select {
+    font-size: 3vh;
+  }
+  form {
     width: 80%;
     margin: auto;
   }
