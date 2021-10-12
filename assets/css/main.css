@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+
 @-webkit-keyframes fadeOut {
   100% {
     opacity: 0;
@@ -75,6 +76,7 @@
   }
 }
 
+
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +84,7 @@
   list-style: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Karla", sans-serif;
   outline: none;
 }
 
@@ -91,6 +93,7 @@ html {
 }
 
 body {
+
   background: #771830;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -100,6 +103,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+
 }
 
 .loader {
@@ -115,7 +119,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1D2326;
+  background-color: #1d2326;
   z-index: 90000;
 }
 
@@ -141,15 +145,94 @@ html {
 }
 
 .loader.hidden {
+
+
+#zoomOut {
+  position: absolute;
+  width: 0vw;
+  height: 0vw;
+  background-color: #611427;
+  border-radius: 50%;
+  -webkit-animation-name: zoomOut;
+          animation-name: zoomOut;
+  -webkit-animation-duration: 0.1s;
+          animation-duration: 0.1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@-webkit-keyframes Rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+
   -webkit-animation: fadeOut 1s 2s ease forwards;
           animation: fadeOut 1s 2s ease forwards;
+
 }
 
 footer {
   background: #1d2326;
 }
 
+<<<<<<< HEAD
 footer #logodiv {
+=======
+
+@-webkit-keyframes zoomOut {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0%;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0%;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  100% {
+    background-color: #611427;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    background-color: #611427;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+footer div {
+>>>>>>> main
   padding: 2em;
   padding-top: 5em;
 }
@@ -255,6 +338,7 @@ footer #wheel2 {
 footer .loader.hidden {
   -webkit-animation: fadeOut 1s 2s ease forwards;
           animation: fadeOut 1s 2s ease forwards;
+
 }
 
 @media screen and (max-width: 800px) {

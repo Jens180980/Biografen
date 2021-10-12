@@ -1,14 +1,49 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+// font-family: 'Ephesis', cursive;
+
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap"); //font-family: 'Karla', sans-serif;
+// font-family: "Karla", sans-serif;
+
+
 @import "helpers/variabler";
 @import "helpers/animation";
 @import "helpers/mixin";
 @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+    outline: none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #611427;
+}
+@mixin button {
+    padding: 10px;
+    font-size: 2vw;
+    font-weight: 600;
+    color: black;
+    background-color: #F9BC50;
+    border: 3px solid #bd8c39;
+    outline: 3px solid #bd8c39;
+    outline-offset: 3px;
+    transition: 0.1s;
+    &:hover{
+        outline-offset: 6px;
+    }
+    
+}
+// Her starter page loader!!!
+
     font-family: 'Roboto', sans-serif;
     outline: none;
 }
@@ -35,7 +70,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1D2326;
+    background-color: #1d2326;
     z-index: 90000;
     svg {
         width: 45vw;
@@ -57,6 +92,40 @@ html {
 .loader.hidden {
     animation: fadeOut 1s 2s ease forwards;
 }
+
+    // her er svg logoet
+    svg {
+        width: 45vw;
+    }
+    #wheel1,
+    #wheel2 {
+        animation-name: Rotation;
+        animation-duration: 1s;
+        // animation-delay: ;
+        animation-iteration-count: infinite;
+        // animation-direction: ;
+        animation-timing-function: linear;
+        animation-fill-mode: none;
+        transform-origin: center;
+        transform-box: fill-box;
+    }
+}
+// .loader.hidden er css'en der bliver kaldt fra js så "page loadern" forsvinder
+.loader.hidden {
+    animation: fadeOut 2s 2s linear forwards;
+}
+// Den stor sirkle der popper fram før alt forsvinder
+#zoomOut {
+    position: absolute;
+    width: 0vw;
+    height: 0vw;
+    background-color: #611427;
+    border-radius: 50%;
+    animation-name: zoomOut;
+    animation-duration: 0.1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 
 //Footer
 footer {
@@ -124,6 +193,7 @@ footer {
     
     }
 
+<<<<<<< HEAD
     svg {
         width: 45vw;
     }
@@ -152,3 +222,56 @@ footer {
         display: block;
     }
 }
+=======
+#loader {
+    width: 45vw;
+}
+
+#wheel1,
+#wheel2 {
+    animation-name: Rotation;
+    animation-duration: 1s;
+    // animation-delay: ;
+    animation-iteration-count: infinite;
+    // animation-direction: ;
+    animation-timing-function: linear;
+    animation-fill-mode: none;
+    transform-origin: center;
+}
+
+// Alle keyframes'erne
+@keyframes Rotation {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+@keyframes zoomOut {
+    0% {
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+    }
+    100% {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0%;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+        background-color: #611427;
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+.loader.hidden {
+    animation: fadeOut 1s 2s ease forwards;
+}
+>>>>>>> main

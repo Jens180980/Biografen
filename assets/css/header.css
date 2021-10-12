@@ -1,0 +1,101 @@
+ /* HEADER MED NAVIGATION STYLING */
+ @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+:root {
+--gold: #d3ac2b;
+--bluegardient: linear-gradient(204deg, rgba(0, 0, 102, 1) 51%, rgba(0, 0, 64, 1) 72%);
+--white:#f0f0e5;
+--black: #1d2326;
+--red-gardient: linear-gradient(204deg, rgba(119, 24, 48, 1) 51%, rgba(85, 16, 33, 1) 72%);
+--red:#771830;
+}
+
+header a {
+    color: var(--gold);
+    text-decoration: none;
+    font-family: 'Karla';
+    transition: 200ms;
+}
+header a:hover {
+    color: #fbcd35;
+}
+
+header li {
+    list-style-type: none;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    background-color: var(--black);
+    z-index: 100;
+}
+
+#header-wrap {
+    width: 95vw;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#header-logo {
+    width: 7vw;
+    padding: 1rem;  
+}
+
+#quick-links {
+    display: flex;
+}
+#quick-links li {
+    width: 15vw;
+    font-size: 2rem;
+    
+}
+#header-wrap span {
+    margin-left: auto;
+    color: var(--gold);
+    font-size: 2rem;
+    transition: 200ms;
+    cursor: pointer;
+}
+#header-wrap span:hover {
+    color: #fbcd35;
+}
+
+nav {
+    display: none;
+    position: absolute;
+    top:10vh;
+    right: 0;
+    height: 100vh;
+    background-color: var(--black);
+    padding: 0.5rem;
+}
+.show-nav {
+    display: block !important;
+}
+.show-nav-items {
+    display: block !important;
+}
+nav li {
+    color: var(--gold);
+    font-family: 'Karla';
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 200ms;
+    margin: 0 1rem 1rem 0;
+}
+nav li:hover {
+    color: #fbcd35;
+}
+#kinoList, #facilitiesList, #moviesList {
+    display: none;
+    padding-left: 1rem;
+}
+#ticketLink {
+    background-color: var(--gold);
+    color: var(--white);
+    padding: 0.5rem;
+}
+

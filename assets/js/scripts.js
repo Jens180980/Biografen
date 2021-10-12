@@ -3,6 +3,7 @@ window.addEventListener("load", function(){
     loader.classList += " hidden";
 });
 
+<<<<<<< HEAD
 //vi kan se mere tekst ved at klikke på
 function toggleExpand(link) { 
     const element = document.querySelector('.toggleText');
@@ -32,3 +33,5 @@ function toggleExpand(link) {
     video.remove();
     videoPlayer.classList.remove('active');
   }
+=======
+>>>>>>> main
