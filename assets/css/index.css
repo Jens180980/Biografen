@@ -1,9 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes Rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes Rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translate(-100vw, 0);
+            transform: translate(-100vw, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translate(-100vw, 0);
+            transform: translate(-100vw, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.9);
+  }
 }
 
 .slideshow {
@@ -83,146 +152,86 @@
           animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
 }
 
-@-webkit-keyframes slideIn {
-  0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
+h2 {
+  color: #d3ac2b;
+  font-family: 'Ephesis', cursive;
+  font-size: 3em;
+  text-align: center;
+  padding: 3vh;
 }
 
-@keyframes slideIn {
-  0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
+p {
+  color: #f0f0e5;
+  font-family: 'Karla', sans-serif;
+  margin-top: 0.5em;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    background: rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    background: rgba(255, 255, 255, 0.9);
-  }
+a {
+  text-decoration: none;
+  color: #d3ac2b;
+  font-weight: bold;
 }
 
-@keyframes fadeIn {
-  0% {
-    background: rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    background: rgba(255, 255, 255, 0.9);
-  }
+a:hover {
+  color: #f0f0e5;
 }
 
-section {
-  background: linear-gradient(204deg, #771830 51%, #551021 72%);
+#index {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
 }
 
-section figure {
-  height: 50%;
+#index figure {
   margin: 3em;
 }
 
-section figure img {
+#index figure img {
   width: 100%;
 }
 
-section figure h2 {
+#aboutHeader {
+  height: 80vh;
+  background: url("/assets/images/Biograf (1).jpg");
+  background-size: cover;
+}
+
+h1 {
   color: #d3ac2b;
   font-family: 'Ephesis', cursive;
   font-size: 3em;
   text-align: center;
+  padding: 3vh;
+  font-size: 4em;
+  margin: 0;
+  padding-bottom: 0;
 }
 
-section figure p {
-  color: #f0f0e5;
-  font-family: 'Karla', sans-serif;
-  margin-top: 0.5em;
-}
-
-section figure a {
-  text-decoration: none;
-  color: #d3ac2b;
-  font-weight: bold;
-}
-
-section figure a:hover {
-  color: #f0f0e5;
-}
-
-footer {
-  background: #1d2326;
-}
-
-footer div {
-  padding: 2em;
-}
-
-footer div img {
-  width: 15%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-
-footer h2 {
-  color: #d3ac2b;
-  font-family: 'Ephesis', cursive;
-  font-size: 3em;
-  text-align: center;
-}
-
-footer h3 {
-  color: #f0f0e5;
-  text-align: center;
-  font-family: 'Karla', sans-serif;
-  margin: 1em;
-}
-
-footer #social {
-  color: #f0f0e5;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-footer i {
-  margin-right: 0.5em;
-}
-
-footer i:hover {
-  color: #d3ac2b;
-}
-
-footer article {
+#about figure {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
-  padding: 2em;
-  color: #f0f0e5;
-  font-family: 'Karla', sans-serif;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  margin: 3em;
 }
 
-footer article h4 {
-  padding-bottom: 0.5em;
+#about figure img {
+  width: 100%;
 }
 
-footer article li {
-  list-style: none;
+#about figure p {
+  -webkit-column-count: 2;
+          column-count: 2;
+  padding: 0 1.5em;
+}
+
+#about figure figcaption {
+  border: 2px solid #1d2326;
+}
+
+#filmHeader {
+  height: 80vh;
+  background: url("/assets/images/Kultur_3D-film_06-0_423539a.jpg");
+  background-size: cover;
 }
