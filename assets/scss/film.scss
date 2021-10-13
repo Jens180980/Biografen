@@ -1,0 +1,48 @@
+@import "helpers/variabler"; 
+@import "helpers/mixin"; 
+
+
+.container { 
+    height:250vh;
+    margin:auto;
+    padding:15px;
+    text-align: center;
+    background: $red;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .filter-menu {
+        margin-bottom: 20px;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                cursor: pointer;
+                // @include button;
+            }
+        }
+
+    }
+    .filter-item {
+        width: 70%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 1em;
+        margin-left: auto;
+        margin-right: auto;
+        li.active {
+            width: 100%;
+            transition: all 0.5s ease;
+        }
+        li.delete {
+            width: 0%;
+            padding: 0;
+            transition: all 0.5s ease;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }
+        }
+}
