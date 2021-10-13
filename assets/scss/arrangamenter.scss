@@ -237,7 +237,7 @@ $black: black;
         .specialfgrid {
         display: block;
     }
-}
+    }
     .arrangamentersection {
         #arranggrid {
             figure {
@@ -271,9 +271,6 @@ header {
 
     }
 }
-
-// //Media queries telefon
-// @media screen and (max-width: 800px) {
 }
 //Media queries telefon
 @media screen and (max-width: 800px) {
@@ -283,26 +280,20 @@ header {
     }
 }
     .arrangamentersection {
-
-//     .arrangamentersection {
-
-//         #arranggrid {
-//             figure {
-//                 display: block;
-//             }
-//         }
-//     }
-//     .tilmeldsection {
-
-//         #kategori.select{
-//             font-size: 3vh;
-//         }
-//         form{
-//             width: 80%;
-//             margin:auto;
-          
-//         }
-//     }
-    
-//  }
+        #arranggrid {
+            figure {
+                display: block;
+            }
+        }
+    }
+    .tilmeldsection {
+        #kategori.select{
+            font-size: 3vh;
+        }
+        form{
+            width: 80%;
+            margin:auto;
+        }
+    }
+ }
 

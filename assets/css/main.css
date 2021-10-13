@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 @-webkit-keyframes fadeOut {
   100% {
     opacity: 0;
@@ -76,7 +77,6 @@
   }
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -93,7 +93,14 @@ html {
 }
 
 body {
+  background-color: #611427;
+}
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
   background: #771830;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -103,7 +110,6 @@ body {
 
 html {
   scroll-behavior: smooth;
-
 }
 
 .loader {
@@ -144,6 +150,36 @@ html {
   transform-box: fill-box;
 }
 
+.loader.hidden {
+  -webkit-animation: fadeOut 1s 2s ease forwards;
+          animation: fadeOut 1s 2s ease forwards;
+}
+
+svg {
+  width: 45vw;
+}
+
+#wheel1,
+#wheel2 {
+  -webkit-animation-name: Rotation;
+          animation-name: Rotation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+.loader.hidden {
+  -webkit-animation: fadeOut 2s 2s linear forwards;
+          animation: fadeOut 2s 2s linear forwards;
+}
 
 #zoomOut {
   position: absolute;
@@ -161,71 +197,13 @@ html {
           animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transform-origin: center;
-          transform-origin: center;
-}
-
-@-webkit-keyframes Rotation {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
-
-  -webkit-animation: fadeOut 1s 2s ease forwards;
-          animation: fadeOut 1s 2s ease forwards;
-
 }
 
 footer {
   background: #1d2326;
 }
 
-@-webkit-keyframes zoomOut {
-  0% {
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-  }
-  100% {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0%;
-  }
-}
-
-@keyframes zoomOut {
-  0% {
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-  }
-  100% {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0%;
-  }
-}
-
-@-webkit-keyframes fadeOut {
-  100% {
-    background-color: #611427;
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-@keyframes fadeOut {
-  100% {
-    background-color: #611427;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-footer div {
+footer #logodiv {
   padding: 2em;
   padding-top: 5em;
 }
@@ -331,11 +309,80 @@ footer #wheel2 {
 footer .loader.hidden {
   -webkit-animation: fadeOut 1s 2s ease forwards;
           animation: fadeOut 1s 2s ease forwards;
-
 }
 
 @media screen and (max-width: 800px) {
   footer #gridfooter {
     display: block;
   }
+}
+
+#loader {
+  width: 45vw;
+}
+
+#wheel1,
+#wheel2 {
+  -webkit-animation-name: Rotation;
+          animation-name: Rotation;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+@keyframes Rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes zoomOut {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0%;
+  }
+}
+
+@keyframes zoomOut {
+  0% {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+  }
+  100% {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0%;
+  }
+}
+
+@keyframes fadeOut {
+  100% {
+    background-color: #611427;
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader.hidden {
+  -webkit-animation: fadeOut 1s 2s ease forwards;
+          animation: fadeOut 1s 2s ease forwards;
 }

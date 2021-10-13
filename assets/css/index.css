@@ -247,18 +247,19 @@ a:hover {
 
 .video video {
   position: relative;
-  max-width: 80%;
+  max-width: 60%;
   outline: none;
 }
 
 .close {
   position: absolute;
-  top: 30px;
-  right: 30px;
+  right: 50px;
   cursor: pointer;
   -webkit-filter: invert(1);
           filter: invert(1);
   max-width: 40px;
+  margin-right: 10%;
+  margin-bottom: 30%;
 }
 
 #aboutHeader {

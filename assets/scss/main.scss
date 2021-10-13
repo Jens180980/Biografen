@@ -44,7 +44,10 @@ body{
 }
 // Her starter page loader!!!
 
-    
+//     font-family: 'Roboto', sans-serif;
+//     outline: none;
+// }
+
 html {
     scroll-behavior: smooth;
 }
@@ -123,7 +126,7 @@ html {
     animation-delay: 2s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-
+}
 //Footer
 footer {
     background: $black;
@@ -268,5 +271,4 @@ footer {
 
 .loader.hidden {
     animation: fadeOut 1s 2s ease forwards;
-}
 }

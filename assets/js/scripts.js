@@ -16,19 +16,19 @@ function toggleExpand(link) {
 
 
   //play video
-  const videoPlayer = document.querySelector('.video');
+  const videoPlay = document.querySelector('.video');
   // VIDEO play and stop
   function playVideo(videolink){
       const video = document.createElement('video')
       video.src = videolink;
       video.setAttribute('controls','controls');
-      videoPlayer.prepend(video);
-      videoPlayer.classList.add('active');
+      videoPlay.prepend(video);
+      videoPlay.classList.add('active');
   }
 
   //closing the video
   function closeVideo(){
     const video = document.querySelector('video');
     video.remove();
-    videoPlayer.classList.remove('active');
+    videoPlay.classList.remove('active');
   }
