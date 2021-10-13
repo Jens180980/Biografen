@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/sotering.css">
     <link href="/_FILES/webfonts/all.css" rel="stylesheet">
     <!-- JAVASCRIPT -->
     <script src="assets/js/slider.js" defer></script>
     <script src="assets/js/header.js" defer></script>
+    <script src="assets/js/sotering.js" defer></script>
     <title>Biografen | Home</title>
 </head>
 <header id="header">
     <div id="header-wrap">
-    <a href="index.html">
-    <?xml version="1.0" encoding="utf-8"?>
-    <!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-    <svg version="1.1" id="header-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-         viewBox="0 0 288.17 309.87" enable-background="new 0 0 288.17 309.87" xml:space="preserve">
+        <a href="index.html">
+            <?xml version="1.0" encoding="utf-8"?>
+            <!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+            <svg version="1.1" id="header-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 288.17 309.87" enable-background="new 0 0 288.17 309.87" xml:space="preserve">
     <rect id="background2" x="38.31" y="49.17" transform="matrix(-1 8.315230e-15 -8.315230e-15 -1 288.167 309.8738)" fill="#1D2326" stroke="#F9BC50" stroke-width="5" stroke-miterlimit="10" width="211.54" height="211.54"/>
     <rect id="background1" x="51.31" y="62.17" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 355.5228 162.6114)" fill="#1D2326" stroke="#F9BC50" stroke-width="5" stroke-miterlimit="10" width="185.54" height="185.54"/>
     <g id="Camera">
@@ -66,74 +67,115 @@
             l-29.62-29.62L178.94,111.02L178.94,111.02z"/>
     </g>
     </svg>
-    </a>
-    
+        </a>
+
         <ul id="quick-links">
             <li> <a href="ticket.html">Bestil billet</a></li>
             <li> <a href="about.html">Om Kino</a></li>
             <li> <a href="film.html">Aktuelle Film</a></li>
         </ul>
-    
-    <span id="burger">&#9776</span>
-</div>
-<nav id="navigation">
-    <ul>
-        <li id="kinoMain"><a href="about.html">Om kino</a>
-            <ul id="kinoList">
-                <li id="facilitiesMain"><a href="about.html">Faciliteterne</a>
-                    <ul id="facilitiesList">
-                        <li><a href="about.html">Salene</a></li>
-                        <li><a href="about.html">Cafe</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li><a href="arrangamenter.html">Arrangementer</a></li>
-        <li id="moviesMain"><a href="film.html">Film</a>
-            <ul id="moviesList">
-                <li><a href="film.html">Aktuelle Film</a></li>
-                <li><a href="film.html">Seniorfilm</a></li>
-                <li><a href="film.html">Børnefilm</a></li>
-            </ul>
 
-        </li>
-        <li><a id="ticketLink" href="ticket.html">Bestil billet</a></li>
-        <li><a href="#footer">Kontakt</a></li>
-    </ul>
-</nav>
+        <span id="burger">&#9776</span>
+    </div>
+    <nav id="navigation">
+        <ul>
+            <li id="kinoMain"><a href="about.html">Om kino</a>
+                <ul id="kinoList">
+                    <li id="facilitiesMain"><a href="about.html">Faciliteterne</a>
+                        <ul id="facilitiesList">
+                            <li><a href="about.html">Salene</a></li>
+                            <li><a href="about.html">Cafe</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="arrangamenter.html">Arrangementer</a></li>
+            <li id="moviesMain"><a href="film.html">Film</a>
+                <ul id="moviesList">
+                    <li><a href="film.html">Aktuelle Film</a></li>
+                    <li><a href="film.html">Seniorfilm</a></li>
+                    <li><a href="film.html">Børnefilm</a></li>
+                </ul>
+
+            </li>
+            <li><a id="ticketLink" href="ticket.html">Bestil billet</a></li>
+            <li><a href="#footer">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
 <body>
     <header id="filmHeader"></header>
-    <h1>Film</h1>
+    <section class="container">
+        <h1>Film</h1>
+
+        <ul class="filter-menu">
+            <li data-target="all">Alle</li>
+            <li data-target="senior">Senior</li>
+            <li data-target="aktuelle">Aktuelle</li>
+            <li data-target="kid">Børn</li>
+        </ul>
+
+        <ul class="filter-item">
+            <li data-item="aktuelle">
+                <img src="assets/images/poster/Poster-Citizenfour.jpg" alt="movieposter Citizenfour kino biograf"></li>
+            <li data-item="aktuelle">
+                <img src="assets/images/poster/Poster-Ida.gif" alt="movieposter Ida kino biograf"></li>
+            <li data-item="aktuelle">
+                <img src="assets/images/poster/Poster-Riot.jpg" alt="movieposter Riot kino biograf"></li>
+            <li data-item="senior">
+                <img src="assets/images/poster/vintage-lyon-landmark-poster-vector.jpg" alt="movieposter Lyon kino biograf"></li>
+            <li data-item="senior">
+                <img src="assets/images/poster/International Women's Day Poster Vector_International-Women's-Day-Poster-Vector.jpg" alt="movieposter queen kino biograf"></li>
+            <li data-item="senior">
+                <img src="assets/images/poster/2207.jpg" alt="movieposter speak kino biograf"></li>
+            <li data-item="senior">
+                <img src="assets/images/poster/movie-night-poster-illustration-vector.jpg" alt="movieposter  kino biograf"></li>
+            <li data-item="kid">
+                <img src="assets/images/poster/Poster-Trash.jpg" alt="movieposter Trash kino biograf"></li>
+            <li data-item="kid">
+                <img src="assets/images/poster/Halloween party.jpg" alt="movieposter Halloweenparty kino biograf"></li>
+        </ul>
+
+
+
+
+
+
+    </section>
+
     <footer>
         <!-- Vigtige - kort info -->
-        <div>
+        <div id="logodiv">
             <img src="assets/logo/logo.svg" alt="kino logo biograf">
             <h2>Kino</h2>
-            <h3>
-                <i class="fab fa-facebook"></i>
-                <i class="fab fa-instagram"></i></h3>
-            <h3><i class="fas fa-map-pin"></i>Haveje 33-35 • 1840 Avedøre</h3>
-            <h3> <i class="fas fa-phone-alt"></i>55 33 23 16</h3>
-            <h3><i class="fas fa-mail-bulk"></i>Biografen@mail.dk</h3>
         </div>
-        <!-- Mere dyb info -->
-        <article>
-            <span>
-        <h4>Forestillinger:</h4>
-        <li> Senior Bio: Man.- Tor.: 14.00 - 16.00</li>
-        <li>Første Forestilling: 16.15 - 18.00</li>
-        <li>Anden Forestilling: 18.30 - 21.00</li>
-        <li>Anden Forestilling: 21.15 - 22.00</li>
-        <li>Fred. lørd. Midnat: 22.30 - 02.00</li>
-    </span>
-            <span>
-        <p>Billettelefonen er åben 30 min før dagens første forestilling.</p>
-    </span>
-            <span>
-        <p>Køb billetter online via: www.kino.dk</p>
-    </span>
-        </article>
+        <div id="gridfooter">
+            <div class="footerleft">
+                <h3>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i></h3>
+                <h3><i class="fas fa-map-pin"></i>Haveje 33-35 • 1840 Avedøre</h3>
+                <h3> <i class="fas fa-phone-alt"></i>55 33 23 16</h3>
+                <h3><i class="fas fa-mail-bulk"></i>Biografen@mail.dk</h3>
+            </div>
+            <article class="footerright">
+                <span id="span">
+                        <h4>Forestillinger:</h4>
+                        <li> Senior Bio: Man.- Tor.: 14.00 - 16.00</li>
+                        <li>Første Forestilling: 16.15 - 18.00</li>
+                        <li>Anden Forestilling: 18.30 - 21.00</li>
+                        <li>Anden Forestilling: 21.15 - 22.00</li>
+                        <li>Fred. lørd. Midnat: 22.30 - 02.00</li>
+                    </span>
+            </article>
+        </div>
+        <div id="sidsteinfo" style="text-align: center; padding-bottom:2em;">
+            <p>Billettelefonen er åben 30 min før dagens første forestilling.</p>
+            <p>Køb billetter online via: www.kino.dk</p>
+        </div>
     </footer>
+
 
 </body>
 

@@ -298,4 +298,17 @@
   .specialforestillinger .specialfgrid {
     display: block;
   }
+<<<<<<< HEAD
+=======
+  .arrangamentersection #arranggrid figure {
+    display: block;
+  }
+  .tilmeldsection #kategori.select {
+    font-size: 3vh;
+  }
+  .tilmeldsection form {
+    width: 80%;
+    margin: auto;
+  }
+>>>>>>> main
 }
