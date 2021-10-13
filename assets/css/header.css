@@ -11,17 +11,17 @@
 --red:#771830;
 }
 
-header a {
+#header a {
     color: var(--gold);
     text-decoration: none;
     font-family: 'Karla';
     transition: 200ms;
 }
-header a:hover {
+#header a:hover {
     color: #fbcd35;
 }
 
-header li {
+#header li {
     list-style-type: none;
 }
 
@@ -41,7 +41,7 @@ header li {
 
 #header-logo {
     width: 7vw;
-    padding: 1rem;  
+    padding: 1rem;
 }
 
 #quick-links {
@@ -50,7 +50,7 @@ header li {
 #quick-links li {
     width: 15vw;
     font-size: 2rem;
-    
+
 }
 #header-wrap span {
     margin-left: auto;
@@ -63,7 +63,7 @@ header li {
     color: #fbcd35;
 }
 
-nav {
+#header nav {
     display: none;
     position: absolute;
     top:10vh;
@@ -78,7 +78,7 @@ nav {
 .show-nav-items {
     display: block !important;
 }
-nav li {
+#header nav li {
     color: var(--gold);
     font-family: 'Karla';
     font-size: 1.5rem;
@@ -86,7 +86,7 @@ nav li {
     transition: 200ms;
     margin: 0 1rem 1rem 0;
 }
-nav li:hover {
+#header nav li:hover {
     color: #fbcd35;
 }
 #kinoList, #facilitiesList, #moviesList {
@@ -95,7 +95,6 @@ nav li:hover {
 }
 #ticketLink {
     background-color: var(--gold);
-    color: var(--white);
+    color: var(--white) !important;
     padding: 0.5rem;
 }
-
