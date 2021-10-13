@@ -1,9 +1,23 @@
+// ACORDEON
+
+// MOVIETICKET
+const arrTicketInfo = [
+  {
+    moviePick: '',
+    datePick: null,
+    hourPick: null,
+    quanOfTickets: 0,
+    totalPrice: 0
+  }
+]
+
+// MOVIEPICK
+
 // CALENDAR
 let changeMonths = 0
 let chosenDate
 const daysOfWeekSHORT = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 const daysOfWeekLONG = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-
 
 // Dom creation preparation
 const calendarWrap = document.createElement('section')
@@ -94,7 +108,7 @@ function buildCalendar() {
             actualDay.setAttribute('id', 'currentDay')
           }
         let iterationDate = `${i + 1}/${month + 1}/${year}`
-        actualDay.addEventListener('click', () => console.log(iterationDate))
+        actualDay.addEventListener('click', () => arrTicketInfo[0].datePick = iterationDate)
     }
 }
 
@@ -111,20 +125,27 @@ document.getElementById('next-btn').addEventListener('click', () => {
 })
 }
 
+// PICK TIME
+
 
 // SEATING
 const sits = document.querySelectorAll(".sitHover")
-let total = 0
+let totalSum = 0
+let totalTickets = 0
 let status = false
 
 for (let item of sits) {
   item.addEventListener("click", function () {
     item.classList.toggle("valgt")
     if (item.classList.contains("valgt")){
-      total += 100
-    }else{total -=100
+      totalSum += 100
+      totalTickets += 1
+    } else{
+      totalSum -=100
+      totalTickets -= 1
     }
-    console.log(total);
+    arrTicketInfo[0].totalPrice = totalSum
+    arrTicketInfo[0].quanOfTickets = totalTickets
 
   })
 }
