@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
 });
 
 //vi kan se mere tekst ved at klikke på
-function toggleExpand(link) { 
+function toggleExpand(link) {
     const element = document.querySelector('.toggleText');
     element.classList.toggle('texthidden');
     if(link.innerText === '↓ Læs videre'){
@@ -26,18 +26,9 @@ function toggleExpand(link) {
 //       videoPlay.classList.add('active');
 //   }
 
-<<<<<<< HEAD
-  //closing the video
-  function closeVideo(){
-    const video = document.querySelector('video');
-    video.remove();
-    videoPlayer.classList.remove('active');
-  }
-=======
 //   //closing the video
 //   function closeVideo(){
 //     const video = document.querySelector('video');
 //     video.remove();
 //     videoPlay.classList.remove('active');
 //   }
->>>>>>> main

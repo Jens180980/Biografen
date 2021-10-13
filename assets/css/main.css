@@ -53,19 +53,11 @@ html {
 body {
   background-color: #611427;
 }
-<<<<<<< HEAD
 
 html {
   scroll-behavior: smooth;
 }
 
-=======
-
-html {
-  scroll-behavior: smooth;
-}
-
->>>>>>> main
 body {
   background: #771830;
   box-sizing: border-box;
@@ -110,7 +102,6 @@ html {
 svg {
   width: 45vw;
 }
-<<<<<<< HEAD
 
 #wheel1,
 #wheel2 {
@@ -123,20 +114,6 @@ svg {
   transform-box: fill-box;
 }
 
-=======
-
-#wheel1,
-#wheel2 {
-  animation-name: Rotation;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-fill-mode: none;
-  transform-origin: center;
-  transform-box: fill-box;
-}
-
->>>>>>> main
 .loader.hidden {
   animation: fadeOut 2s 2s linear forwards;
 }
@@ -158,11 +135,7 @@ svg {
   background: #1d2326;
 }
 
-<<<<<<< HEAD
-#zoomOut footer #logodiv {
-=======
 footer #logodiv {
->>>>>>> main
   padding: 2em;
   padding-top: 5em;
 }
@@ -185,11 +158,7 @@ footer #logodiv {
   padding: 0;
 }
 
-<<<<<<< HEAD
-#zoomOut footer #gridfooter {
-=======
 footer #gridfooter {
->>>>>>> main
   display: grid;
   grid-template-columns: auto auto;
   padding: 0;
@@ -247,13 +216,8 @@ footer #gridfooter {
   width: 45vw;
 }
 
-<<<<<<< HEAD
-#zoomOut footer #wheel1,
-#zoomOut footer #wheel2 {
-=======
 footer #wheel1,
 footer #wheel2 {
->>>>>>> main
   animation-name: Rotation;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -263,11 +227,7 @@ footer #wheel2 {
   transform-box: fill-box;
 }
 
-<<<<<<< HEAD
-#zoomOut footer .loader.hidden {
-=======
 footer .loader.hidden {
->>>>>>> main
   animation: fadeOut 1s 2s ease forwards;
 }
 
@@ -277,21 +237,12 @@ footer .loader.hidden {
   }
 }
 
-<<<<<<< HEAD
-#zoomOut #loader {
-  width: 45vw;
-}
-
-#zoomOut #wheel1,
-#zoomOut #wheel2 {
-=======
 #loader {
   width: 45vw;
 }
 
 #wheel1,
 #wheel2 {
->>>>>>> main
   animation-name: Rotation;
   animation-duration: 1s;
   animation-iteration-count: infinite;
@@ -330,10 +281,6 @@ footer .loader.hidden {
   }
 }
 
-<<<<<<< HEAD
-#zoomOut .loader.hidden {
-=======
 .loader.hidden {
->>>>>>> main
   animation: fadeOut 1s 2s ease forwards;
 }
