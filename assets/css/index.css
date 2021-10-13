@@ -1,348 +1,360 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
 @-webkit-keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
+
 @keyframes fadeOut {
-  100% {
-    opacity: 0;
-    visibility: hidden;
-  }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @-webkit-keyframes Rotation {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
+    from {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+    to {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
 }
 
 @keyframes Rotation {
-  from {
-    -webkit-transform: rotateZ(0deg);
-            transform: rotateZ(0deg);
-  }
-  to {
-    -webkit-transform: rotateZ(360deg);
-            transform: rotateZ(360deg);
-  }
+    from {
+        -webkit-transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
+    }
+    to {
+        -webkit-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
 }
 
 @-webkit-keyframes slideIn {
-  0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
+    0% {
+        -webkit-transform: translate(-100vw, 0);
+        transform: translate(-100vw, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
 }
 
 @keyframes slideIn {
-  0% {
-    -webkit-transform: translate(-100vw, 0);
-            transform: translate(-100vw, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
+    0% {
+        -webkit-transform: translate(-100vw, 0);
+        transform: translate(-100vw, 0);
+    }
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
 }
 
 @-webkit-keyframes fadeIn {
-  0% {
-    background: rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    background: rgba(255, 255, 255, 0.9);
-  }
+    0% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    100% {}
+    100% {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.9);
+    }
 }
 
 @keyframes fadeIn {
-  0% {
-    background: rgba(255, 255, 255, 0.5);
-  }
-  100% {
-    background: rgba(255, 255, 255, 0.9);
-  }
+    0% {
+        background: rgba(255, 255, 255, 0.5);
+    }
+    100% {
+        background: rgba(255, 255, 255, 0.9);
+    }
 }
 
 .slideshow {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .slideshow .slide {
-  position: absolute;
-  width: 100%;
-  height: 70vh;
-  display: none;
-  z-index: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    display: none;
+    z-index: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
 
 .slideshow .active-slide {
-  z-index: 10;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
-          animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+    animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
 }
 
 .slideshow .prev-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .slideshow .dot-cont {
-  position: absolute;
-  z-index: 10;
-  bottom: 5px;
-  width: 100px;
-  height: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 10px;
+    position: absolute;
+    z-index: 10;
+    bottom: 5px;
+    width: 100px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 .slideshow .dot-cont .dot {
-  margin: 5px;
-  width: 50%;
-  height: 75%;
-  border-radius: 50%;
-  background: #d3ac2b;
+    margin: 5px;
+    width: 50%;
+    height: 75%;
+    border-radius: 50%;
+    background: #d3ac2b;
 }
 
 .slideshow .dot-cont .dot:hover {
-  cursor: pointer;
-  background: white;
+    cursor: pointer;
+    background: white;
 }
 
 .slideshow .dot-cont .dot .active-dot {
-  -webkit-animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
-          animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+    -webkit-animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+    animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
 }
 
 h2 {
-  color: #d3ac2b;
-  font-family: 'Ephesis', cursive;
-  font-size: 3em;
-  text-align: center;
-  padding: 3vh;
+    color: #d3ac2b;
+    font-family: 'Ephesis', cursive;
+    font-size: 3em;
+    text-align: center;
+    padding: 3vh;
 }
 
 p {
-  color: #f0f0e5;
-  font-family: 'Karla', sans-serif;
-  margin-top: 0.5em;
+    color: #f0f0e5;
+    font-family: 'Karla', sans-serif;
+    margin-top: 0.5em;
 }
 
 a {
-  text-decoration: none;
-  color: #d3ac2b;
-  font-weight: bold;
+    text-decoration: none;
+    color: #d3ac2b;
+    font-weight: bold;
 }
 
 a:hover {
-  color: #f0f0e5;
+    color: #f0f0e5;
 }
 
 .figuregrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
-  position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+    grid-template-columns: auto auto;
+    position: relative;
 }
 
 .figuregrid figure {
-  margin: 3em;
-  text-align: center;
+    margin: 3em;
+    text-align: center;
 }
 
 .figuregrid figure .boldp {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .figuregrid figure img {
-  max-width: 80%;
-  height: auto;
-  opacity: 0.6;
+    max-width: 80%;
+    height: auto;
+    opacity: 0.6;
 }
 
 .figuregrid figure #playvideo1 {
-  position: absolute;
-  width: 15%;
-  top: 25%;
-  left: 18%;
-  opacity: 1;
+    position: absolute;
+    width: 15%;
+    top: 25%;
+    left: 18%;
+    opacity: 1;
 }
 
 .figuregrid figure #playvideo2 {
-  position: absolute;
-  width: 15%;
-  top: 25%;
-  left: 69%;
-  opacity: 1;
+    position: absolute;
+    width: 15%;
+    top: 25%;
+    left: 69%;
+    opacity: 1;
 }
 
 .figuregrid figure .texthidden {
-  display: none;
+    display: none;
 }
 
 .video.active {
-  visibility: visible;
+    visibility: visible;
 }
 
 .video {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  z-index: 10;
-  background: rgba(0, 0, 0, 0.95);
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  visibility: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    visibility: hidden;
 }
 
 .video video {
-  position: relative;
-  max-width: 60%;
-  outline: none;
+    position: relative;
+    max-width: 60%;
+    outline: none;
 }
 
 .close {
-  position: absolute;
-  right: 50px;
-  cursor: pointer;
-  -webkit-filter: invert(1);
-          filter: invert(1);
-  max-width: 40px;
-  margin-right: 10%;
-  margin-bottom: 30%;
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    -webkit-filter: invert(1);
+    filter: invert(1);
+    max-width: 40px;
+    margin-right: 10%;
+    margin-bottom: 30%;
 }
 
 #aboutHeader {
-  height: 80vh;
-  background: url("/assets/images/Biograf (1).jpg");
-  background-size: cover;
+    height: 80vh;
+    background: url("/assets/images/Biograf (1).jpg");
+    background-size: cover;
 }
 
 h1 {
-  color: #d3ac2b;
-  font-family: 'Ephesis', cursive;
-  font-size: 3em;
-  text-align: center;
-  padding: 3vh;
-  font-size: 4em;
-  margin: 0;
-  padding-bottom: 0;
+    color: #d3ac2b;
+    font-family: 'Ephesis', cursive;
+    font-size: 3em;
+    text-align: center;
+    padding: 3vh;
+    font-size: 4em;
+    margin: 0;
+    padding-bottom: 0;
 }
 
 #about figure {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  margin: 3em;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+    grid-template-columns: 50% 50%;
+    margin: 3em;
 }
 
 #about figure img {
-  width: 100%;
+    width: 100%;
 }
 
 #about figure p {
-  -webkit-column-count: 2;
-          column-count: 2;
-  padding: 0 1.5em;
+    -webkit-column-count: 2;
+    column-count: 2;
+    padding: 0 1.5em;
 }
 
 #about figure figcaption {
-  border: 2px solid #1d2326;
+    border: 2px solid #1d2326;
 }
 
 #filmHeader {
-  height: 80vh;
-  background: url("/assets/images/Kultur_3D-film_06-0_423539a.jpg");
-  background-size: cover;
+    height: 80vh;
+    background: url("/assets/images/Kultur_3D-film_06-0_423539a.jpg");
+    background-size: cover;
 }
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
-  .figuregrid {
-    display: block;
-  }
-  .figuregrid img#playvideo1 {
-    position: absolute;
-    width: 25%;
-    top: 15%;
-    left: 38%;
-    opacity: 1;
-  }
-  .figuregrid img#playvideo2 {
-    position: absolute;
-    width: 25%;
-    top: 65%;
-    left: 38%;
-    opacity: 1;
-  }
+    .figuregrid {
+        display: block;
+    }
+    .figuregrid img#playvideo1 {
+        position: absolute;
+        width: 25%;
+        top: 15%;
+        left: 38%;
+        opacity: 1;
+    }
+    .figuregrid img#playvideo2 {
+        position: absolute;
+        width: 25%;
+        top: 65%;
+        left: 38%;
+        opacity: 1;
+    }
 }
 
 @media screen and (max-width: 800px) {
-  .figuregrid {
-    display: block;
-  }
-  .figuregrid img#playvideo1 {
-    position: absolute;
-    width: 25%;
-    top: 15%;
-    left: 38%;
-    opacity: 1;
-  }
-  .figuregrid img#playvideo2 {
-    position: absolute;
-    width: 25%;
-    top: 65%;
-    left: 38%;
-    opacity: 1;
-  }
+    .figuregrid {
+        display: block;
+    }
+    .figuregrid img#playvideo1 {
+        position: absolute;
+        width: 25%;
+        top: 15%;
+        left: 38%;
+        opacity: 1;
+    }
+    .figuregrid img#playvideo2 {
+        position: absolute;
+        width: 25%;
+        top: 65%;
+        left: 38%;
+        opacity: 1;
+    }
 }
