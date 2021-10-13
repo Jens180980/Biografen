@@ -303,6 +303,10 @@
     width: 60%;
     margin: auto;
   }
+  header img {
+    width: 10vw;
+    display: none;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -316,13 +320,6 @@
     font-size: 3vh;
   }
   .tilmeldsection form {
-    width: 80%;
-    margin: auto;
-  }
-  #kategori.select {
-    font-size: 3vh;
-  }
-  form {
     width: 80%;
     margin: auto;
   }
