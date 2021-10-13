@@ -199,7 +199,7 @@ svg {
           animation-fill-mode: forwards;
 }
 
-footer {
+#zoomOut footer {
   background: #1d2326;
 }
 
@@ -208,7 +208,7 @@ footer #logodiv {
   padding-top: 5em;
 }
 
-footer #logodiv img {
+#zoomOut footer #logodiv img {
   width: 15%;
   display: block;
   margin-left: auto;
@@ -217,7 +217,7 @@ footer #logodiv img {
           transform: rotate(30deg);
 }
 
-footer #logodiv h2 {
+#zoomOut footer #logodiv h2 {
   color: #d3ac2b;
   font-family: 'Ephesis', cursive;
   font-size: 3em;
@@ -235,33 +235,33 @@ footer #gridfooter {
   padding: 0;
 }
 
-footer #gridfooter .footerleft {
+#zoomOut footer #gridfooter .footerleft {
   padding: 0;
 }
 
-footer #gridfooter .footerleft h3 {
+#zoomOut footer #gridfooter .footerleft h3 {
   color: #f0f0e5;
   text-align: center;
   font-family: 'Karla', sans-serif;
   margin: 1em;
 }
 
-footer #gridfooter .footerleft #social {
+#zoomOut footer #gridfooter .footerleft #social {
   color: #f0f0e5;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-footer #gridfooter .footerleft i {
+#zoomOut footer #gridfooter .footerleft i {
   margin-right: 0.5em;
 }
 
-footer #gridfooter .footerleft i:hover {
+#zoomOut footer #gridfooter .footerleft i:hover {
   color: #d3ac2b;
 }
 
-footer #gridfooter article.footerright {
+#zoomOut footer #gridfooter article.footerright {
   padding: 0 !important;
   text-align: center;
   padding: 2em;
@@ -270,22 +270,22 @@ footer #gridfooter article.footerright {
   color: #f0f0e5;
 }
 
-footer #gridfooter article.footerright #span {
+#zoomOut footer #gridfooter article.footerright #span {
   color: #f0f0e5;
   text-align: center;
   font-family: 'Karla', sans-serif;
   margin: 1em;
 }
 
-footer #gridfooter article.footerright h4 {
+#zoomOut footer #gridfooter article.footerright h4 {
   padding-bottom: 0.5em;
 }
 
-footer #gridfooter article.footerright li {
+#zoomOut footer #gridfooter article.footerright li {
   list-style: none;
 }
 
-footer svg {
+#zoomOut footer svg {
   width: 45vw;
 }
 
@@ -312,7 +312,7 @@ footer .loader.hidden {
 }
 
 @media screen and (max-width: 800px) {
-  footer #gridfooter {
+  #zoomOut footer #gridfooter {
     display: block;
   }
 }

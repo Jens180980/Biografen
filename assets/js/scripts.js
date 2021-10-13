@@ -4,7 +4,7 @@ window.addEventListener("load", function(){
 });
 
 //vi kan se mere tekst ved at klikke på
-function toggleExpand(link) { 
+function toggleExpand(link) {
     const element = document.querySelector('.toggleText');
     element.classList.toggle('texthidden');
     if(link.innerText === '↓ Læs videre'){

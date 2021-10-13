@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+
 :root {
 --gold: #d3ac2b;
 --bluegardient: linear-gradient(204deg, rgba(0, 0, 102, 1) 51%, rgba(0, 0, 64, 1) 72%);
@@ -5,8 +10,165 @@
 --black: #1d2326;
 --red-gardient: linear-gradient(204deg, rgba(119, 24, 48, 1) 51%, rgba(85, 16, 33, 1) 72%);
 --red:#771830;
+--CalendarWidth: 350px; /* MINIMUM 350PX */
 }
 
-body {
-  background-color: var(--red-gardient);
+#calendarContainer, #movieSelectSection, #pickSeat, #payment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem;
+}
+
+h2 {
+  font-family: Ephesis;
+  color: var(--gold);
+  font-size: 3rem;
+  text-align: center;
+}
+
+#appHook {
+  background-color: var(--black);
+  color: var(--gold);
+  padding: 1rem;
+}
+
+#seatingSVG {
+  width: 60vw;
+  display: block;
+}
+
+#prev-btn, #next-btn {
+  width: 3vw;
+  cursor: pointer;
+  box-shadow: 0px 0px 2px gray;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+#calendarHeader {
+  box-sizing: border-box;
+  width: var(--CalendarWidth);
+  padding: 10px;
+  font-size: 26px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#calendarHeader button {
+  background-color:var(--gold);
+}
+#calendar-hook {
+  width: 770px;
+}
+#calendar-wrap {
+  width: var(--CalendarWidth);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+}
+
+#weekdays {
+  width: var(--CalendarWidth);
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: center;
+  color: #247BA0;
+}
+.weekdays {
+  list-style-type: none;
+}
+
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.day {
+  padding: 0.5rem;
+  height: 2rem;
+  cursor: pointer;
+  box-sizing: border-box;
+
+  margin: 0.25rem;
+  text-align: center;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+.day + #currentDay {
+  background-color:var(--gold);
+  color: var(--white);
+}
+
+.padding {
+  cursor: default !important;
+  box-shadow: none !important;
+}
+
+#movieSelect, #timeSelect {
+  width: 25%;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: var(--black);
+  color: var(--gold);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#paymentWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#paymentInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#paymentInput > * {
+  margin-top: 1rem;
+}
+
+#ccName, #ccNum  {
+  width: 61vw;
+  padding: 1rem;
+}
+
+#paymentMethods {
+  width: 30vw;
+}
+
+#ccInfo {
+  width: 61vw;
+}
+#ccInfo input {
+  width: 20.2vw;
+  padding: 1rem;
+}
+
+#buyBtn {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  background-color: var(--gold);
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+  margin: 2rem 0;
+  cursor: pointer;
+}
+#buyBtn:hover {
+  background-color: var(--white);
+  color: var(--gold);
 }
