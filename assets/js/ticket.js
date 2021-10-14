@@ -1,9 +1,5 @@
-// ACORDEON
-
-// #calendarContainer, #pickSeat, #paymentContainer
-
 // MOVIETICKET
-const arrTicketInfo = [
+const arrTicketInfo =   // 
   {
     moviePick: '',
     datePick: null,
@@ -11,14 +7,14 @@ const arrTicketInfo = [
     quanOfTickets: 0,
     totalPrice: 0
   }
-]
+
 
 function ticketBuilder() {
-  movieHTML.innerText = arrTicketInfo[0].moviePick
-  dayHTML.innerText = arrTicketInfo[0].datePick
-  clockHTML.innerText = arrTicketInfo[0].hourPick
-  numTicketHTML.innerText = `${arrTicketInfo[0].quanOfTickets} sæder`
-  priceHTML.innerText = `Kr. ${arrTicketInfo[0].totalPrice}`
+  movieHTML.innerText = arrTicketInfo.moviePick
+  dayHTML.innerText = arrTicketInfo.datePick
+  clockHTML.innerText = arrTicketInfo.hourPick
+  numTicketHTML.innerText = `${arrTicketInfo.quanOfTickets} sæder`
+  priceHTML.innerText = `Kr. ${arrTicketInfo.totalPrice}`
   console.log(arrTicketInfo);
 }
 
@@ -26,7 +22,7 @@ buyBtn.addEventListener('click', () => ticketBuilder())
 
 // MOVIEPICK
 movieSelect.addEventListener('change', () => {
-  arrTicketInfo[0].moviePick = movieSelect.value
+  arrTicketInfo.moviePick = movieSelect.value
   calendarContainer.classList.add('showSection')
 })
 
@@ -101,8 +97,6 @@ function buildCalendar() {
     monthString = new Date(year, month, 1).toLocaleString('default', { month: 'long' })
     monthYearDisplay.innerText = `${monthString} ${year}`
 
-
-
      for (i=0; i < daysOfWeekSHORT.length; i++) { // creates unordered list of weekdays
         const colTitles = document.createElement('div')
         colTitles.classList.add('weekdays')
@@ -127,7 +121,7 @@ function buildCalendar() {
           }
         let iterationDate = `${i + 1}/${month + 1}/${year}`
         actualDay.addEventListener('click', () => {
-          arrTicketInfo[0].datePick = iterationDate
+          arrTicketInfo.datePick = iterationDate
           actualDay.classList.add('dayPicked')
         })
     }
@@ -148,7 +142,7 @@ document.getElementById('next-btn').addEventListener('click', () => {
 
 // PICK TIME
 timeSelect.addEventListener('change', () => {
-  arrTicketInfo[0].hourPick = timeSelect.value
+  arrTicketInfo.hourPick = timeSelect.value
   pickSeat.classList.add('showSection')
 })
 
@@ -168,9 +162,8 @@ for (let item of sits) {
       totalSum -=100
       totalTickets -= 1
     }
-    arrTicketInfo[0].totalPrice = totalSum
-    arrTicketInfo[0].quanOfTickets = totalTickets
+    arrTicketInfo.totalPrice = totalSum
+    arrTicketInfo.quanOfTickets = totalTickets
     paymentWrap.classList.add('showSection')
-
   })
 }

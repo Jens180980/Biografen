@@ -14,7 +14,7 @@
     <script src="/assets/js/arrangamenter.js" defer></script>
     
     <script src="assets/js/header.js" defer></script>
-    <title>Biografen | Home</title>
+    <title>Biografen | Arrangementer</title>
 </head>
 
 <body>
@@ -184,7 +184,7 @@
 
         <!-- tilmeld dig formular -->
         <h2 id="tilmeldh2">Tilmeld dig til:</h2>
-        <h2 id="Hh2">+ Vælg arrangament</h2>
+        <h2 class="Hh2">1. Vælg arrangament</h2>
         <div class="center-box">
             <select class="select" id="kategori" name="biolist" form="bioform" required>
                 <option value="">Selekt en kategori</option>
@@ -199,8 +199,9 @@
             </select>
 
         </div>
-        <h2 id="Hh2">+ Kontaktoplysninger</h2>
+        
         <form>
+            <h2 class="Hh2">2. Kontaktoplysninger</h2>
                 <div>
                     <input type="text" name="selectedOption" id="selectedOption" placeholder="Valgt kategori"></input>
                 </div>
@@ -230,12 +231,13 @@
                 </div>
 
         </form>
-        <h2 id="Hh2">+ Betaling </h2>
+        
         <div id="betaling">
+            <h2 class="Hh2">3. Betaling </h2>
             <div class="col-50">
-                <h3 id="betalingh3">Betaling</h3>
+
                 <div class="paymentdiv">
-                    <h3 style="color:white;">Accepteret betalingsmetoder:</h3>
+                    <h3 style="color:white;">Accepterede betalingsmetoder:</h3>
                     <img id="betalingimg" src="/assets/images/betalingslogo_02.jpg" alt="">
                     <input type="text" id="cname" name="cardname" placeholder="Navn på kortet">
                     <input type="text" id="ccnum" name="cardnumber" placeholder="Kortnummer : f eks: 1111-2222-3333-4444">
