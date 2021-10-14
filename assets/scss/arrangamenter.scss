@@ -28,6 +28,21 @@ $black: black;
     color: $white;
     font-size: 3vh;
 }
+@mixin button {
+    padding: 10px;
+    font-size: 2vw;
+    font-weight: 600;
+    color: black;
+    background-color: #F9BC50;
+    border: 3px solid #bd8c39;
+    outline: 3px solid #bd8c39;
+    outline-offset: 3px;
+    transition: 0.1s;
+    &:hover{
+        outline-offset: 6px;
+    }
+
+}
 
 
 //header picture styling
@@ -48,6 +63,7 @@ $black: black;
     .specialfgrid {
         display: grid;
         grid-template-columns: auto auto;
+        gap: 2vw;
         figure {
             text-align: center;
             #citizenpic {
@@ -116,8 +132,11 @@ $black: black;
                     padding: 2vh;
                     // border: 1px solid white;
                     background: transparent;
+
+                    @include button();
+
                     a {
-                        color: $gold;
+                        color: black;
                         font-weight: bold;
                     }
                 }

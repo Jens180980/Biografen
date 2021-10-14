@@ -22,8 +22,11 @@
 }
 
 .specialforestillinger .specialfgrid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 2vw;
 }
 
 .specialforestillinger .specialfgrid figure {
@@ -80,8 +83,10 @@
 }
 
 .arrangamentersection #arranggrid figure {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 40% 60%;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
   width: 90%;
   margin: auto;
   padding-bottom: 5vh;
@@ -109,10 +114,24 @@
   margin: 10%;
   padding: 2vh;
   background: transparent;
+  padding: 10px;
+  font-size: 2vw;
+  font-weight: 600;
+  color: black;
+  background-color: #F9BC50;
+  border: 3px solid #bd8c39;
+  outline: 3px solid #bd8c39;
+  outline-offset: 3px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.arrangamentersection #arranggrid figure figcaption #tilmeldbutton:hover {
+  outline-offset: 6px;
 }
 
 .arrangamentersection #arranggrid figure figcaption #tilmeldbutton a {
-  color: #D3AC2B;
+  color: black;
   font-weight: bold;
 }
 
@@ -152,9 +171,15 @@
 
 .tilmeldsection .center-box {
   height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .tilmeldsection .center-box select {
@@ -189,7 +214,8 @@
 
 .tilmeldsection input {
   width: 100%;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 10px;
   margin: 8px 0;
 }
@@ -259,8 +285,12 @@
 }
 
 .tilmeldsection #betaling .paymentdiv .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .tilmeldsection #betaling #tilmeldbutton {
