@@ -159,9 +159,10 @@ $black: black;
 
 
     }
-    #Hh2 {
+    .Hh2 {
         color: #D3AC2B;
-        font-size: 2em;
+        font-size: 2rem;
+        text-align: center;
     }
     #tilmeldh2 {
         @include h2text();
