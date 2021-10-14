@@ -57,3 +57,21 @@
   -webkit-filter: grayscale(1);
           filter: grayscale(1);
 }
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .filter-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .filter-item {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}

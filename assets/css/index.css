@@ -325,6 +325,10 @@ h1 {
     left: 38%;
     opacity: 1;
   }
+  #about figure {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -344,5 +348,9 @@ h1 {
     top: 65%;
     left: 38%;
     opacity: 1;
+  }
+  #about figure {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }
