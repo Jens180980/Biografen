@@ -26,10 +26,8 @@
 
 .container .filter-item {
   width: 70%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto auto;
-      grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
   gap: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -37,14 +35,12 @@
 
 .container .filter-item li.active {
   width: 100%;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .container .filter-item li.delete {
   width: 0%;
   padding: 0;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 

@@ -89,7 +89,7 @@
 				<li> <a href="film.html">Aktuelle Film</a></li>
 			</ul>
 
-			<span id="burger"> = </span>
+			<span id="burger"> &#9776 </span>
 		</div>
 		<nav id="navigation">
 			<ul>
@@ -118,8 +118,10 @@
 		</nav>
 	</header>
 
+	<h1>Bestil din billet her</h1>
+
 	<section id="movieSelectSection">
-		<h2>Vælg en film</h2>
+		<h2>1. Vælg en film</h2>
 
 		<select class="movieSelect" id="movieSelect" name="movieSelect" required>
 				<option value="0">Vælg en film</option>
@@ -139,7 +141,7 @@
 	</section>
 
 	<section id="calendarContainer">
-		<h2>Vælg dato og tidspunkt</h2>
+		<h2>2. Vælg dato og tidspunkt</h2>
 		<div id="appHook"></div>
 		<select class="timeSelect" id="timeSelect" name="timeSelect" required>
 				<option value="0">Vælg tidspunkt</option>
@@ -149,7 +151,7 @@
 	</section>
 
 <section id="pickSeat">
-	<h2>Vælg siddepladser</h2>
+	<h2>3. Vælg siddepladser</h2>
 	<div id="svgWrap">
 	<?xml version="1.0" encoding="utf-8"?>
 	<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -826,9 +828,10 @@
 	</div>
 	</section>
 
+
 <section id="paymentContainer">
-	<h2>Betaling</h2>
 	<div id="paymentWrap">
+		<h2>4. Betaling</h2>
 					<div id="paymentInput">
 							<img id="paymentMethods" src="/assets/images/betalingslogo_02.jpg" alt="">
 							<input type="text" id="ccName" name="cardname" placeholder="Navn på kortet">
@@ -843,7 +846,58 @@
 	</div>
 	</section>
 
+	<section id="ticketWrap">
+	<figure id="ticketHTML">
+		<img src="assets/images/Ticket.png" alt="billet">
+		<figcaption>
+	<strong id="movieHTML"></strong>
+	<ul id="dateHTML">
+		<li id="dayHTML"></li>
+		<li id="monthHTML"></li>
+		<li id="clockHTML"></li>
+	</ul>
+	<ul id="ticketFooter">
+		<li id="numTicketHTML"></li>
+		<li id="priceHTML"></li>
+	</ul>
+		</figcaption>
+	</figure>
+</section>
+
+<footer>
+		<!-- Vigtige - kort info -->
+		<div id="logodiv">
+				<img src="assets/logo/logo.svg" alt="kino logo biograf">
+				<h2>Kino</h2>
+		</div>
+		<div id="gridfooter">
+				<div class="footerleft">
+						<h3>
+								<i class="fab fa-facebook"></i>
+								<i class="fab fa-instagram"></i></h3>
+						<h3><i class="fas fa-map-pin"></i>Haveje 33-35 • 1840 Avedøre</h3>
+						<h3> <i class="fas fa-phone-alt"></i>55 33 23 16</h3>
+						<h3><i class="fas fa-mail-bulk"></i>Biografen@mail.dk</h3>
+
+				</div>
+
+				<!-- Mere dyb info -->
+				<article class="footerright">
+						<span id="span">
+								<h4>Forestillinger:</h4>
+								<li> Senior Bio: Man.- Tor.: 14.00 - 16.00</li>
+								<li>Første Forestilling: 16.15 - 18.00</li>
+								<li>Anden Forestilling: 18.30 - 21.00</li>
+								<li>Anden Forestilling: 21.15 - 22.00</li>
+								<li>Fred. lørd. Midnat: 22.30 - 02.00</li>
+						</span>
+				</article>
+		</div>
+		<div id="sidsteinfo" style="text-align: center; padding-bottom:2em;">
+						<p>Billettelefonen er åben 30 min før dagens første forestilling.</p>
+						<p>Køb billetter online via: www.kino.dk</p>
+		</div>
+</footer>
 
 </body>
-
 </html>

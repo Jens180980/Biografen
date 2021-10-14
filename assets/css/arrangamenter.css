@@ -187,9 +187,10 @@
   font-size: 5vh;
 }
 
-.tilmeldsection #Hh2 {
+.tilmeldsection .Hh2 {
   color: #D3AC2B;
-  font-size: 2em;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .tilmeldsection #tilmeldh2 {
