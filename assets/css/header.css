@@ -98,3 +98,20 @@
     color: var(--white) !important;
     padding: 0.5rem;
 }
+
+
+@media screen and (max-width: 500px) {
+
+  #quick-links {
+      display: none;
+  }
+  #header nav {
+      display: none;
+      position: absolute;
+      top:0;
+      right: 0;
+      height: 100vh;
+      background-color: var(--black);
+      padding: 0.5rem;
+  }
+}
