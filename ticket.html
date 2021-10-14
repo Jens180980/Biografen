@@ -104,8 +104,10 @@
 		</nav>
 	</header>
 
+	<h1>Bestil din billet her</h1>
+
 	<section id="movieSelectSection">
-		<h2>Vælg en film</h2>
+		<h2>1. Vælg en film</h2>
 
 		<select class="movieSelect" id="movieSelect" name="movieSelect" required>
 				<option value="0">Vælg en film</option>
@@ -123,9 +125,8 @@
 		</select>
 
 	</section>
-
+	<h2>2. Vælg dato og tidspunkt</h2>
 	<section id="calendarContainer">
-		<h2>Vælg dato og tidspunkt</h2>
 		<div id="appHook"></div>
 		<select class="timeSelect" id="timeSelect" name="timeSelect" required>
 				<option value="0">Vælg tidspunkt</option>
@@ -133,9 +134,9 @@
 				<option value="21:00">21:00</option>
 		</select>
 	</section>
-
+	<h2>3. Vælg siddepladser</h2>
 <section id="pickSeat">
-	<h2>Vælg siddepladser</h2>
+	
 	<div id="svgWrap">
 	<?xml version="1.0" encoding="utf-8"?>
 	<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -812,8 +813,9 @@
 	</div>
 	</section>
 
+	<h2>4. Betaling</h2>
 <section id="paymentContainer">
-	<h2>Betaling</h2>
+	
 	<div id="paymentWrap">
 					<div id="paymentInput">
 							<img id="paymentMethods" src="/assets/images/betalingslogo_02.jpg" alt="">
@@ -829,24 +831,23 @@
 	</div>
 	</section>
 
+	<section id="ticketWrap">
 	<figure id="ticketHTML">
 		<img src="assets/images/Ticket.png" alt="billet">
 		<figcaption>
-	<strong id="movieHTML">Film</strong>
+	<strong id="movieHTML"></strong>
 	<ul id="dateHTML">
-		<li id="dayHTML">dag</li>
-		<li id="monthHTML">måned</li>
-		<li id="clockHTML">klok</li>
+		<li id="dayHTML"></li>
+		<li id="monthHTML"></li>
+		<li id="clockHTML"></li>
 	</ul>
 	<ul id="ticketFooter">
-		<li id="numTicketHTML">3 sæder</li>
-		<li id="priceHTML">200kr</li>
+		<li id="numTicketHTML"></li>
+		<li id="priceHTML"></li>
 	</ul>
 	
 		</figcaption>
 	</figure>
-
-
+</section>
 </body>
-
 </html>

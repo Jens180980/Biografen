@@ -1,5 +1,7 @@
 // ACORDEON
 
+// #calendarContainer, #pickSeat, #paymentContainer
+
 // MOVIETICKET
 const arrTicketInfo = [
   {
@@ -11,7 +13,23 @@ const arrTicketInfo = [
   }
 ]
 
+function ticketBuilder() {
+  movieHTML.innerText = arrTicketInfo[0].moviePick
+  dayHTML.innerText = arrTicketInfo[0].datePick
+  clockHTML.innerText = arrTicketInfo[0].hourPick
+  numTicketHTML.innerText = `${arrTicketInfo[0].quanOfTickets} sæder`
+  priceHTML.innerText = `Kr. ${arrTicketInfo[0].totalPrice}`
+  console.log(arrTicketInfo);
+}
+
+buyBtn.addEventListener('click', () => ticketBuilder())
+
 // MOVIEPICK
+movieSelect.addEventListener('change', () => {
+  arrTicketInfo[0].moviePick = movieSelect.value
+  calendarContainer.classList.add('showSection')
+})
+
 
 // CALENDAR
 let changeMonths = 0
@@ -31,7 +49,7 @@ nextBtn.innerText = '>'
 let monthYearDisplay = document.createElement('div')
 monthYearDisplay.setAttribute('id', 'month-year-display')
 
-// CALLING FUNCTIONS
+// CALLING INITIAL FUNCTION
 buildInitHTML()
 
 // FUNCTIONS
@@ -108,7 +126,10 @@ function buildCalendar() {
             actualDay.setAttribute('id', 'currentDay')
           }
         let iterationDate = `${i + 1}/${month + 1}/${year}`
-        actualDay.addEventListener('click', () => arrTicketInfo[0].datePick = iterationDate)
+        actualDay.addEventListener('click', () => {
+          arrTicketInfo[0].datePick = iterationDate
+          actualDay.classList.add('dayPicked')
+        })
     }
 }
 
@@ -126,8 +147,10 @@ document.getElementById('next-btn').addEventListener('click', () => {
 }
 
 // PICK TIME
-let timeSelected 
-timeSelect.addEventListener('click', () => arrTicketInfo[0].hourPick = timeSelect.value)
+timeSelect.addEventListener('change', () => {
+  arrTicketInfo[0].hourPick = timeSelect.value
+  pickSeat.classList.add('showSection')
+})
 
 // SEATING
 const sits = document.querySelectorAll(".sitHover")
@@ -147,6 +170,7 @@ for (let item of sits) {
     }
     arrTicketInfo[0].totalPrice = totalSum
     arrTicketInfo[0].quanOfTickets = totalTickets
+    paymentWrap.classList.add('showSection')
 
   })
 }
