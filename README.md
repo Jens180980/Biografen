@@ -1,1 +1,13 @@
 # Biografen
+Arbejdsfordeling 
+Vores arbejdsfordeling kan ses på vores Zenhub link: https://github.com/Jens180980/Biografen#workspaces/biografen-615c19edf1f8980013f23c5b/board?notFullScreen=false&repos=413744323 
+Herunder vil der blive skrevet lidt mere i dybden om hvem der har lavet hvad.
+Emilie
+Emilie har lavet skelettet til vores index og SCSS. Det var meningen at man skulle kunne genbruge en del derfra så strukturen var der fra start af. Dog har der været nogle kommunikationsproblemer heriblandt. Emilie har sine kompetencer i SCSS så hun har fået opgaven at sætte SCSS op, med en _helpers mappe, hvor der var eksterne filer med fx mixin, variabler og @keyframes i. De blev herefter importeret til alle sider så det var nemt for hele gruppen at arbejde med det. Emilie har lavet siderne Index, om bio og film. Derudover har hun lavet udkastet til footeren, der dog efterfølgende er blevet rettet lidt i af andre gruppemedlemmer. Hun har også fundet flere plakater og haft ansvar for præsentation og dokumentation. Emilie har haft udfordringer med JavaScript så er derfor fået til opgave at lave en slider og en filtre funktion i JavaScript. 
+Eva
+Eva har haft siderne tilmelding, arrangementer/forestilling. Eva har lavet vores 3-trins løsning vores bestil billet side. Hun har også lavet andre funktioner på de forskellige undersider, som selct funktionen til arrangementer. Derudover kom der en ændring i planen ved index, hvor Eva tog over og lavede vores figurer med billede og tekst, om til en video modal med tekst. Eva har arbejdet i alle vores sprog og har ikke haft større problemer med det. Eneste problem var kommunikation til github, som alle i gruppen har oplevet.
+Jens
+Jens kompetencer ligger meget i JavaScript og han har derfor fået lov til at styre derudad med de lidt tungere og svære JavaScript dele. Han har fået udfordret hans evne indenfor sproget og har derud over kæmpet en del med SCSS. Han har været gruppens github mester og har derfor også brugt meget tid på at hjælpe hele gruppen. Jens opgaver var bla. Bestil billet, Kalender og navigationen.
+Patrik 
+Patriks store kompetence er den grafiske del, så derfor har han fået en del ansvar for det. Han har blandt andet lavet optimering af billeder, logo, svg af billet og biografsæde, XD wireframe og styling af button til hele siden. Vi har udfordret Patrik med noget JavaScript, hvor han skulle få sit logo lavet om til en pageloader. Funktion vælg af sæde har han med hjælp fra gruppen også fået sat op med JavaScript og derfor udfordret hans evne indenfor faget. Derudover har vi også udfordret ham med brug af SCSS-værktøjer især mixin. Patrik har også brugt tid på at sætte sig ind i Seo og optimeret vores opgave derfra.
+ 
