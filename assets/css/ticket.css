@@ -172,3 +172,58 @@ h2 {
   background-color: var(--white);
   color: var(--gold);
 }
+
+
+#ticketHTML {
+  display: inline-block;
+  position: relative;
+}
+
+#ticketHTML img {
+  width: 50vw;
+}
+
+#ticketHTML figcaption {
+  position: absolute;
+  width: 77%;
+  height: 100%;
+  color: #611427;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#movieHTML {
+  text-align: center;
+  font-size: 5vw;
+  padding-top: 1.5vw;
+}
+
+#dateHTML {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 5vw;
+  padding-top: 1.5vw;
+  font-size: 3vw;
+}
+
+#ticketFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 4vw;
+  padding-top: 1.5vw;
+  font-size: 4vw;
+}
+
