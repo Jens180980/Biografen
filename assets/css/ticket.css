@@ -21,11 +21,19 @@
   margin: 3rem;
 }
 
-h2 {
+h1 {
   font-family: Ephesis;
   color: var(--gold);
-  font-size: 3rem;
+  font-size: 5rem;
   text-align: center;
+}
+
+h2{
+  font-family: Karla;
+  color: var(--gold);
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 #appHook {
@@ -108,6 +116,10 @@ h2 {
   background-color:var(--gold);
   color: var(--white);
 }
+.dayPicked {
+  background-color: var(--red);
+  color:var(--white);
+}
 
 .padding {
   cursor: default !important;
@@ -172,3 +184,70 @@ h2 {
   background-color: var(--white);
   color: var(--gold);
 }
+
+#ticketWrap {
+  display: flex;
+  justify-content: center;
+}
+
+#ticketHTML {
+  display: inline-block;
+  position: relative;
+}
+
+#ticketHTML img {
+  width: 50vw;
+}
+
+#ticketHTML figcaption {
+  position: absolute;
+  width: 77%;
+  height: 100%;
+  color: #611427;
+  top: 2vh;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#movieHTML {
+  text-align: center;
+  font-size: 5vw;
+  padding-top: 1.5vw;
+}
+
+#dateHTML {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 5vw;
+  padding-top: 1.5vw;
+  font-size: 3vw;
+}
+
+#ticketFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  gap: 4vw;
+  padding-top: 1.5vw;
+  font-size: 4vw;
+}
+
+#calendarContainer, #pickSeat, #paymentWrap {
+  display: none;
+} 
+
+.showSection {
+  display: flex !important;
+}
+
