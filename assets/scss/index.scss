@@ -1,8 +1,8 @@
 @import "helpers/variabler";
 @import "helpers/mixin";
 @import "helpers/animation";
-@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap'); //font-family: 'Karla', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap"); //font-family: 'Karla', sans-serif;
 //Header slider
 .slideshow {
     display: flex;
@@ -81,7 +81,7 @@ a {
     figure {
         margin: 3em;
         text-align: center;
-        .boldp{
+        .boldp {
             font-weight: bold;
         }
         img {
@@ -92,40 +92,37 @@ a {
         #playvideo1 {
             position: absolute;
             width: 15%;
-            top:25%;
-            left:18%;
+            top: 25%;
+            left: 18%;
             opacity: 1;
         }
         #playvideo2 {
             position: absolute;
             width: 15%;
-            top:25%;
-            left:69%;
+            top: 25%;
+            left: 69%;
             opacity: 1;
         }
         .texthidden {
             display: none;
         }
-       
     }
-   
 }
 
-
-//   Styling af video pop-up 
+//   Styling af video pop-up
 .video.active {
     visibility: visible;
 }
 .video {
-    position:fixed;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 10;
-    background:rgba(0,0,0,0.95);
+    background: rgba(0, 0, 0, 0.95);
     width: 100%;
     height: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     visibility: hidden;
@@ -159,7 +156,7 @@ h1 {
     padding-bottom: 0;
 }
 
-//Sektion omkring biograf 
+//Sektion omkring biograf
 #about {
     figure {
         display: grid;
@@ -187,24 +184,28 @@ h1 {
 
 //Media queries tablet
 @media screen and (max-width: 1200px) and (min-width: 800px) {
-.figuregrid {
-    display: block;
-     img#playvideo1 {
-        position: absolute;
-        width: 25%;
-        top:15%;
-        left:38%;
-        opacity: 1;
+    .figuregrid {
+        display: block;
+        img#playvideo1 {
+            position: absolute;
+            width: 25%;
+            top: 15%;
+            left: 38%;
+            opacity: 1;
+        }
+        img#playvideo2 {
+            position: absolute;
+            width: 25%;
+            top: 65%;
+            left: 38%;
+            opacity: 1;
+        }
     }
-    img#playvideo2 {
-        position: absolute;
-        width: 25%;
-        top:65%;
-        left:38%;
-        opacity: 1;
+    #about {
+        figure {
+            grid-template-columns: 100%;
+        }
     }
-}
-
 }
 
 //Media queries telefon
@@ -214,17 +215,21 @@ h1 {
         img#playvideo1 {
             position: absolute;
             width: 25%;
-            top:15%;
-            left:38%;
+            top: 15%;
+            left: 38%;
             opacity: 1;
         }
         img#playvideo2 {
             position: absolute;
             width: 25%;
-            top:65%;
-            left:38%;
+            top: 65%;
+            left: 38%;
             opacity: 1;
         }
     }
-
+    #about {
+        figure {
+            grid-template-columns: 100%;
+        }
+    }
 }

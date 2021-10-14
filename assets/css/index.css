@@ -1,5 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Ephesis&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap");
+@-webkit-keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes fadeOut {
   100% {
     opacity: 0;
@@ -7,21 +13,56 @@
   }
 }
 
-@keyframes Rotation {
+@-webkit-keyframes Rotation {
   from {
-    transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
   }
   to {
-    transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes Rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translate(-100vw, 0);
+            transform: translate(-100vw, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }
 
 @keyframes slideIn {
   0% {
-    transform: translate(-100vw, 0);
+    -webkit-transform: translate(-100vw, 0);
+            transform: translate(-100vw, 0);
   }
   100% {
-    transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    background: rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    background: rgba(255, 255, 255, 0.9);
   }
 }
 
@@ -35,12 +76,18 @@
 }
 
 .slideshow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   width: 100%;
   height: 70vh;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slideshow .slide {
@@ -49,16 +96,23 @@
   height: 70vh;
   display: none;
   z-index: 1;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slideshow .active-slide {
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+  -webkit-animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+          animation: slideIn 2s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
 }
 
 .slideshow .prev-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -68,9 +122,15 @@
   bottom: 5px;
   width: 100px;
   height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 10px;
 }
 
@@ -88,7 +148,8 @@
 }
 
 .slideshow .dot-cont .dot .active-dot {
-  animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+  -webkit-animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
+          animation: fadeIn 1s cubic-bezier(0.7, 0, 0.3, 1) 0s 1 forwards;
 }
 
 h2 {
@@ -116,8 +177,10 @@ a:hover {
 }
 
 .figuregrid {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   position: relative;
 }
 
@@ -164,14 +227,21 @@ a:hover {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   z-index: 10;
   background: rgba(0, 0, 0, 0.95);
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   visibility: hidden;
 }
 
@@ -185,7 +255,8 @@ a:hover {
   position: absolute;
   right: 50px;
   cursor: pointer;
-  filter: invert(1);
+  -webkit-filter: invert(1);
+          filter: invert(1);
   max-width: 40px;
   margin-right: 10%;
   margin-bottom: 30%;
@@ -209,8 +280,10 @@ h1 {
 }
 
 #about figure {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 50% 50%;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
   margin: 3em;
 }
 
@@ -219,7 +292,8 @@ h1 {
 }
 
 #about figure p {
-  column-count: 2;
+  -webkit-column-count: 2;
+          column-count: 2;
   padding: 0 1.5em;
 }
 
@@ -251,6 +325,10 @@ h1 {
     left: 38%;
     opacity: 1;
   }
+  #about figure {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -270,5 +348,9 @@ h1 {
     top: 65%;
     left: 38%;
     opacity: 1;
+  }
+  #about figure {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }

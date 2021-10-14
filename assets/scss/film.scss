@@ -46,3 +46,21 @@
         }
         }
 }
+
+//Media queries tablet
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+    .filter-item {
+        display: grid;
+        grid-template-columns: auto auto;
+}
+
+}
+
+//Media queries telefon
+@media screen and (max-width: 800px) {
+
+    .filter-item {
+        display: grid;
+        grid-template-columns: auto;
+}
+}
