@@ -126,7 +126,8 @@ document.getElementById('next-btn').addEventListener('click', () => {
 }
 
 // PICK TIME
-
+let timeSelected 
+timeSelect.addEventListener('click', () => arrTicketInfo[0].hourPick = timeSelect.value)
 
 // SEATING
 const sits = document.querySelectorAll(".sitHover")
