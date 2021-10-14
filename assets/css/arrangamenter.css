@@ -26,6 +26,9 @@
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
+  gap: 2vw;
+
+  
 }
 
 .specialforestillinger .specialfgrid figure {
@@ -113,10 +116,24 @@
   margin: 10%;
   padding: 2vh;
   background: transparent;
+  padding: 10px;
+  font-size: 2vw;
+  font-weight: 600;
+  color: black;
+  background-color: #F9BC50;
+  border: 3px solid #bd8c39;
+  outline: 3px solid #bd8c39;
+  outline-offset: 3px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.arrangamentersection #arranggrid figure figcaption #tilmeldbutton:hover {
+  outline-offset: 6px;
 }
 
 .arrangamentersection #arranggrid figure figcaption #tilmeldbutton a {
-  color: #D3AC2B;
+  color: black;
   font-weight: bold;
 }
 
