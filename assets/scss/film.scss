@@ -1,11 +1,9 @@
-@import "helpers/variabler"; 
-@import "helpers/mixin"; 
-
-
-.container { 
-    height:250vh;
-    margin:auto;
-    padding:15px;
+@import "helpers/variabler";
+@import "helpers/mixin";
+.container {
+    height: 250vh;
+    margin: auto;
+    padding: 15px;
     text-align: center;
     background: $red;
     img {
@@ -22,7 +20,6 @@
                 // @include button;
             }
         }
-
     }
     .filter-item {
         width: 70%;
@@ -43,6 +40,9 @@
         img {
             width: 100%;
             height: auto;
+            &:hover {
+                filter: grayscale(1);
+            }
         }
         }
 }

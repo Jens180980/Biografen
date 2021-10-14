@@ -30,6 +30,7 @@ img {
   border: 3px solid #bd8c39;
   outline: 3px solid #bd8c39;
   outline-offset: 3px;
+  -webkit-transition: 0.1s;
   transition: 0.1s;
 }
 
@@ -39,8 +40,10 @@ img {
 
 .filter-item {
   width: 70%;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto auto auto;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
   gap: 1em;
   margin-left: auto;
   margin-right: auto;
@@ -48,12 +51,14 @@ img {
 
 .filter-item li.active {
   width: 100%;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .filter-item li.delete {
   width: 0%;
   padding: 0;
+  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
