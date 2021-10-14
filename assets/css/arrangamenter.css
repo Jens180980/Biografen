@@ -27,6 +27,8 @@
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
   gap: 2vw;
+
+  
 }
 
 .specialforestillinger .specialfgrid figure {
